@@ -653,5 +653,15 @@ section:last-of-type { page-break-after: avoid; }
   Based on 7 sermons from widely viewed U.S. church YouTube channels.
 </footer>
 
+  <script>
+  function sendHeight() {
+    var height = document.body.scrollHeight;
+    window.parent.postMessage({type: 'resize', height: height}, '*');
+  }
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+  setTimeout(sendHeight, 500);
+</script>
+  
 </body>
 </html>
