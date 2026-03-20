@@ -6,7 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Jost:wght@300;400;500&display=swap');
 @page { size: letter; margin: 0.65in; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: auto; min-height: unset; }
 body { font-family: 'Jost', sans-serif; color: #1A1610; background: #F9F5EC; font-size: 10.5pt; line-height: 1.6; }
+.footer { margin-bottom: 0; padding-bottom: 0; }
+section:last-of-type, .footer, .cta { page-break-after: avoid; }
 h1 { font-family: 'Cormorant Garamond', serif; font-size: 22pt; font-weight: 600; text-align: center; letter-spacing: 0.5px; }
 h2 { font-family: 'Cormorant Garamond', serif; font-size: 14pt; font-weight: 600; margin-top: 22px; margin-bottom: 8px; color: #1A1610; border-bottom: 1px solid #C9A84C; padding-bottom: 4px; }
 .date { text-align: center; font-size: 11pt; color: #666; margin-top: 2px; }
@@ -68,7 +71,7 @@ h2 { font-family: 'Cormorant Garamond', serif; font-size: 14pt; font-weight: 600
 /* Index section */
 .index-section { background: #fff; padding: 14px 18px; border-radius: 8px; border: 1px solid #e8e2d6; margin: 14px 0; font-size: 10pt; color: #555; }
 .cta { text-align: center; margin: 16px 0; font-size: 10.5pt; color: #666; font-style: italic; }
-.footer { text-align: center; font-size: 8.5pt; color: #aaa; margin-top: 20px; padding-top: 12px; border-top: 1px solid #e8e2d6; }
+.footer { text-align: center; font-size: 8.5pt; color: #aaa; margin-top: 20px; padding-top: 12px; border-top: 1px solid #e8e2d6; margin-bottom: 0; padding-bottom: 0; }
 .footnote { font-size: 8.5pt; color: #999; text-align: center; margin-top: 6px; }
 
 /* Mobile responsive */
