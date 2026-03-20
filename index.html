@@ -496,5 +496,20 @@
   </div>
 
 </div>
+
+ <script>
+(function() {
+  function reportHeight() {
+    var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+    window.parent.postMessage({ type: 'resize', height: h }, '*');
+  }
+  reportHeight();
+  window.addEventListener('load', reportHeight);
+  window.addEventListener('resize', reportHeight);
+  // Re-report after fonts/images settle
+  setTimeout(reportHeight, 1500);
+  setTimeout(reportHeight, 4000);
+})();
+</script>
 </body>
 </html>
