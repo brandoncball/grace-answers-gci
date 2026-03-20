@@ -404,4 +404,13 @@ h2 { font-family: 'Cormorant Garamond', serif; font-size: 14pt; font-weight: 600
 <div class="footer">
 The Grace Clarity Index is a theological assessment tool developed by Grace Answers. &middot; graceanswers.com &middot; Published March 19, 2026 &middot; Based on 7 sermons from the 10 most-viewed U.S. church YouTube channels.
 </div>
+  <script>
+  function sendHeight() {
+    var h = document.documentElement.scrollHeight;
+    window.parent.postMessage({type:'resize', height:h}, '*');
+  }
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+  new MutationObserver(sendHeight).observe(document.body, {childList:true, subtree:true});
+</script>
 </body></html>
