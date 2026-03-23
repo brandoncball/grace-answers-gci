@@ -49,9 +49,11 @@
 
   /* How to Read */
   .how-to-read {
-    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
     font-style: italic;
+    font-size: 1.05rem;
     color: #555;
+    text-align: center;
     padding: 8px 24px 16px;
     font-size: 0.95rem;
     max-width: 680px;
@@ -102,7 +104,16 @@
   .sky-bar {
     height: 32px;
     border-radius: 16px;
-    background: linear-gradient(90deg, #1A1610 0%, #2A2A2A 20%, #4A4A4A 42%, #C0652A 52%, #C0652A 60%, #B8860B 68%, #B8860B 76%, #4A6A8C 82%, #4A6A8C 87%, #5BA3D9 93%, #87CEEB 100%);
+    background: linear-gradient(90deg,
+      #1A1610 0%, #2A2A2A 18%, #4A4A4A 42%,
+      #7A6040 49%,
+      #C0652A 52%, #C0652A 58%,
+      #C89820 64%,
+      #B8860B 68%, #B8860B 74%,
+      #6A7A8C 79%,
+      #4A6A8C 83%, #4A6A8C 87%,
+      #5899C8 91%,
+      #5BA3D9 94%, #87CEEB 100%);
     position: relative;
     margin-bottom: 6px;
   }
@@ -217,59 +228,62 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-size: 0.75rem;
-    color: #888;
-    padding: 14px 0 6px;
+    color: #999;
+    padding: 16px 0 6px;
     border-bottom: 1px solid #e0dcd4;
-    margin: 16px 0 8px;
+    margin-bottom: 8px;
   }
   .category-row {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 8px 0;
+    padding: 10px 0;
+    flex-wrap: wrap;
   }
   .cat-name {
     min-width: 180px;
     font-weight: 500;
     font-size: 0.9rem;
-    flex-shrink: 0;
   }
   .bar-container {
     flex: 1;
-    min-width: 160px;
+    min-width: 200px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
   }
   .bar-track {
     flex: 1;
     height: 14px;
-    background: #e8e4dc;
+    background: #eae6dc;
     border-radius: 7px;
     overflow: hidden;
-    position: relative;
   }
   .bar-fill {
     height: 100%;
     border-radius: 7px;
-    transition: width 0.5s ease;
+    transition: width 0.4s ease;
   }
   .bar-score {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #555;
-    min-width: 40px;
-    text-align: right;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #666;
+    white-space: nowrap;
+    min-width: 55px;
   }
   .cat-desc {
+    width: 100%;
     font-size: 0.82rem;
-    color: #777;
-    min-width: 300px;
-    flex-shrink: 0;
+    color: #888;
+    margin-top: -4px;
+    padding-left: 192px;
   }
 
-  /* Grade Distribution */
-  .distribution { padding: 24px 0; border-top: 1px solid #e0dcd4; }
+  /* Distribution */
+  .distribution {
+    padding: 24px 0;
+    border-top: 1px solid #e0dcd4;
+  }
   .distribution h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
@@ -282,48 +296,50 @@
     display: flex;
     justify-content: center;
     gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
+    max-width: 600px;
   }
   .grade-tile {
-    min-width: 120px;
-    flex: 1 1 calc(20% - 12px);
-    max-width: 160px;
+    flex: 1;
     text-align: center;
-    padding: 16px 12px;
-    border-radius: 12px;
+    padding: 16px 8px 12px;
+    border-radius: 10px;
+    min-width: 90px;
   }
-  .grade-tile .grade-icon svg { width: 36px; height: 36px; }
-  .grade-tile .grade-letter {
+  .grade-icon { margin-bottom: 4px; }
+  .grade-letter {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: 6px 0 2px;
-  }
-  .grade-tile .grade-count {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 1.1;
   }
-  .grade-tile .grade-range {
+  .grade-count {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2px 0;
+  }
+  .grade-range {
     font-size: 0.72rem;
-    color: #888;
-    margin-top: 2px;
+    color: #999;
   }
   .grade-context {
     text-align: center;
-    font-size: 0.88rem;
-    color: #666;
+    font-size: 0.85rem;
+    color: #888;
     font-style: italic;
+    margin-bottom: 6px;
   }
   .dist-footnote {
     text-align: center;
     font-size: 0.8rem;
-    color: #999;
-    margin-top: 12px;
+    color: #aaa;
   }
 
-  /* Index Section */
-  .index-section { padding: 24px 0; border-top: 1px solid #e0dcd4; }
+  /* Index */
+  .index-section {
+    padding: 24px 0;
+    border-top: 1px solid #e0dcd4;
+  }
   .index-section h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
@@ -332,41 +348,45 @@
     margin: 0 0 10px;
     text-align: center;
   }
-  .index-section p { font-size: 0.88rem; color: #555; text-align: center; max-width: 680px; margin: 0 auto 8px; }
+  .index-section p {
+    font-size: 0.88rem;
+    color: #555;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 10px;
+  }
   .grade-scale {
     display: flex;
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
+    font-size: 0.85rem;
+    font-weight: 600;
     margin: 12px 0;
-    font-size: 0.82rem;
   }
-  .grade-scale span { font-weight: 500; }
 
   /* CTA */
   .cta {
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: #888;
+    padding: 20px 24px;
+    border-top: 1px solid #e0dcd4;
     font-style: italic;
   }
 
   /* Footer */
   footer {
     text-align: center;
-    padding: 24px;
     font-size: 0.78rem;
     color: #aaa;
-    border-top: 1px solid #e0dcd4;
-    margin-top: 16px;
+    padding: 20px 24px 40px;
   }
 
   /* Mobile */
   @media (max-width: 767px) {
-    html { font-size: 17px; }
     .container { padding: 0 16px; }
-    .report-header { padding: 24px 16px 16px; }
+    .report-header { padding: 28px 16px 16px; }
     .report-header h1 { font-size: 1.7rem; }
     .headline-score { font-size: 48pt; }
     .temperature-label { font-size: 1.2rem; }
@@ -384,6 +404,7 @@
       min-width: unset;
       font-size: 0.85rem;
       margin-top: 4px;
+      padding-left: 0;
     }
     .tier-header {
       display: block;
@@ -456,8 +477,10 @@
 
 <!-- FAST TAKE -->
 <div class="fast-take">
-  This week: Sincere pastors, warm stages, compelling stories, but the finished work of Christ was almost never the thing doing the theological heavy lifting.
+  This week: Strong tone, sincere intent, but overwhelming reliance on human response as the driver of change.
 </div>
+
+<div class="container">
 
 <!-- PATTERNS -->
 <div class="container">
@@ -486,6 +509,7 @@
   <h3>The Editorial</h3>
   <p>The pattern this week isn't hostility to grace. It's indifference to it as a governing framework. These pastors are not preaching against the finished work. They're preaching around it, building entire messages on the believer's response while occasionally tipping a hat to what Christ accomplished. But a hat tip isn't a foundation. The New Covenant declares that the believer's righteousness, identity, and security are finished realities accomplished entirely by Christ. Until that declaration functions as the load-bearing structure of the sermon, the listener will leave every Sunday carrying weight that was never theirs to hold.</p>
 
+</div>
 </div>
 
 <!-- CATEGORY AVERAGES -->
@@ -727,6 +751,5 @@
   }
 })();
 </script>
-
 </body>
 </html>
