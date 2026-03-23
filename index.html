@@ -102,7 +102,7 @@
   .sky-bar {
     height: 32px;
     border-radius: 16px;
-    background: linear-gradient(90deg, #8B3A3A 0%, #C0652A 25%, #B8860B 50%, #4A6A8C 75%, #4A7C59 100%);
+    background: linear-gradient(90deg, #8B3A3A 0%, #8B3A3A 49%, #C0652A 49%, #C0652A 64%, #B8860B 64%, #B8860B 79%, #4A6A8C 79%, #4A6A8C 89%, #4A7C59 89%, #4A7C59 100%);
     position: relative;
     margin-bottom: 6px;
   }
@@ -118,12 +118,21 @@
     transform: translateX(-50%);
   }
   .sky-bar-labels {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    height: 18px;
     font-size: 0.7rem;
     color: #888;
-    padding: 0 4px;
   }
+  .sky-bar-labels span {
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .sky-bar-labels .lbl-storm { left: 24.5%; }
+  .sky-bar-labels .lbl-overcast { left: 57%; }
+  .sky-bar-labels .lbl-cloudy { left: 72%; }
+  .sky-bar-labels .lbl-clear { left: 84.5%; }
+  .sky-bar-labels .lbl-skies { left: 95%; }
 
   /* Fast Take */
   .fast-take {
@@ -437,11 +446,11 @@
     <div class="sky-bar-marker" style="left: calc(56 * 1%);"></div>
   </div>
   <div class="sky-bar-labels">
-    <span>Storm warning</span>
-    <span>Overcast</span>
-    <span>Partly cloudy</span>
-    <span>Mostly clear</span>
-    <span>Clear skies</span>
+    <span class="lbl-storm">Storm warning</span>
+    <span class="lbl-overcast">Overcast</span>
+    <span class="lbl-cloudy">Partly cloudy</span>
+    <span class="lbl-clear">Mostly clear</span>
+    <span class="lbl-skies">Clear skies</span>
   </div>
 </div>
 
