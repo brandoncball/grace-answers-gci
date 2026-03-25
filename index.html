@@ -370,7 +370,7 @@
     text-align: center;
     font-size: 0.78rem;
     color: #aaa;
-    padding: 20px 24px 40px;
+    padding: 20px 24px 8px;
   }
 
   /* Mobile */
@@ -780,7 +780,7 @@
 (function(){
   function sendHeight(){
     if(window._obs) window._obs.disconnect();document.documentElement.style.height='0';document.body.style.height='0';var h=document.body.scrollHeight;document.body.style.height='';document.documentElement.style.height='';if(window._obs) window._obs.observe(document.body,{childList:true,subtree:true,attributes:true});
-    window.parent.postMessage({type:'resize', height: h}, '*');
+    window.parent.postMessage({type:'resize', height: Math.max(h-30,300)}, '*');
   }
   sendHeight();
   window.addEventListener('load', function(){
