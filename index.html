@@ -1,4 +1,4 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -779,7 +779,7 @@ h<!DOCTYPE html>
 <script>
 (function(){
   function sendHeight(){
-    document.documentElement.style.height='0';var h=document.documentElement.scrollHeight;document.documentElement.style.height='';
+    document.documentElement.style.height='0';document.body.style.height='0';var h=document.body.scrollHeight;document.body.style.height='';document.documentElement.style.height='';
     window.parent.postMessage({type:'resize', height: h}, '*');
   }
   sendHeight();
