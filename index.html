@@ -779,7 +779,7 @@
 <script>
 (function(){
   function sendHeight(){
-    document.documentElement.style.height='0';document.body.style.height='0';var h=document.body.scrollHeight;document.body.style.height='';document.documentElement.style.height='';
+    if(window._m)return;window._m=1;document.documentElement.style.height='0';document.body.style.height='0';var h=document.body.scrollHeight;document.body.style.height='';document.documentElement.style.height='';window._m=0;
     window.parent.postMessage({type:'resize', height: h}, '*');
   }
   sendHeight();
