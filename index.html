@@ -8,7 +8,7 @@ h<!DOCTYPE html>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
   @page { size: 8.5in 11in; margin: 0.75in; }
-  html { font-size: 19px; }
+  html { font-size: 19px; height: auto !important; overflow: visible; }
   body {
     font-family: 'Jost', sans-serif;
     font-size: 19px;
@@ -779,7 +779,7 @@ h<!DOCTYPE html>
 <script>
 (function(){
   function sendHeight(){
-    var h = document.body.offsetHeight;
+    document.documentElement.style.height='0';var h=document.documentElement.scrollHeight;document.documentElement.style.height='';
     window.parent.postMessage({type:'resize', height: h}, '*');
   }
   sendHeight();
