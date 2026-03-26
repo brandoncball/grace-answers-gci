@@ -8,7 +8,7 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; }
   @page { size: 8.5in 11in; margin: 0.75in; }
-  html { font-size: 19px; height: auto !important; overflow: visible; }
+  html { font-size: 19px; height: auto !important; overflow: vishible; }
   body {
     font-family: 'Jost', sans-serif;
     font-size: 19px;
@@ -780,7 +780,7 @@
 (function(){
   function sendHeight(){
     if(window._obs) window._obs.disconnect();document.documentElement.style.height='0';document.body.style.height='0';var h=document.body.scrollHeight;document.body.style.height='';document.documentElement.style.height='';if(window._obs) window._obs.observe(document.body,{childList:true,subtree:true,attributes:true});
-    window.parent.postMessage({type:'resize', height: Math.max(h-30,300)}, '*');
+    window.parent.postMessage({type:'resize', height: Math.max(h,300)}, '*');
   }
   sendHeight();
   window.addEventListener('load', function(){
