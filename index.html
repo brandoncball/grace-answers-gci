@@ -36,7 +36,7 @@
             padding: 40px 24px;
         }
 
-        /<em> HEADER </em>/
+        /* HEADER */
         .header {
             margin-bottom: 48px;
             text-align: center;
@@ -64,11 +64,20 @@
             font-size: 19px;
             line-height: 1.65;
             color: #1A1610;
-            max-width: 600px;
-            margin: 0 auto;
+            text-align: left;
         }
 
-        /<em> HOW TO READ </em>/
+        .week-date {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #C9A84C;
+            margin-bottom: 16px;
+        }
+
+        /* HOW TO READ */
         .how-to-read {
             background-color: #FFFAF2;
             border-left: 4px solid #C9A84C;
@@ -80,7 +89,7 @@
             color: #4A4540;
         }
 
-        /<em> TEMPERATURE SECTION </em>/
+        /* TEMPERATURE SECTION */
         .temperature-section {
             margin: 60px 0 50px;
             text-align: center;
@@ -154,7 +163,7 @@
             margin-bottom: 12px;
         }
 
-        /<em> ONE SENTENCE </em>/
+        /* ONE SENTENCE */
         .fast-take {
             font-family: 'Cormorant Garamond', serif;
             font-size: 22px;
@@ -164,7 +173,7 @@
             line-height: 1.5;
         }
 
-        /<em> PATTERNS SECTION </em>/
+        /* PATTERNS SECTION */
         .patterns {
             margin: 60px 0 50px;
         }
@@ -219,7 +228,7 @@
             line-height: 1.6;
         }
 
-        /<em> FORECAST SECTION </em>/
+        /* FORECAST SECTION */
         .forecast {
             margin: 60px 0 50px;
         }
@@ -290,7 +299,7 @@
             transition: width 0.3s ease;
         }
 
-        /<em> Color ramp green to red </em>/
+        /* Color ramp green to red */
         .bar-fill.pct-100 { background-color: #2D5016; }
         .bar-fill.pct-95 { background-color: #3D6B1F; }
         .bar-fill.pct-90 { background-color: #4D8028; }
@@ -340,7 +349,7 @@
             padding: 12px 0 12px 12px;
         }
 
-        /<em> DISTRIBUTION SECTION </em>/
+        /* DISTRIBUTION SECTION */
         .distribution {
             margin: 60px 0 50px;
         }
@@ -408,7 +417,7 @@
             border-left: 2px solid #C9A84C;
         }
 
-        /<em> INDEX SECTION </em>/
+        /* INDEX SECTION */
         .index {
             margin: 60px 0 50px;
             background-color: #FFFAF2;
@@ -469,7 +478,7 @@
             color: #C9A84C;
         }
 
-        /<em> CTA </em>/
+        /* CTA */
         .cta {
             text-align: center;
             font-family: 'Cormorant Garamond', serif;
@@ -479,7 +488,7 @@
             font-weight: 500;
         }
 
-        /<em> FOOTER </em>/
+        /* FOOTER */
         footer {
             border-top: 1px solid #E0DCD4;
             padding: 20px 24px 8px;
@@ -504,7 +513,7 @@
             color: #C9A84C;
         }
 
-        /<em> MOBILE </em>/
+        /* MOBILE */
         @media (max-width: 767px) {
             .container {
                 padding: 24px 16px;
@@ -636,8 +645,10 @@
         <div class="header">
             <h1>The Sunday Forecast</h1>
             <div class="subtitle">A weekly snapshot of grace clarity across America's most widely viewed pulpits.</div>
-            <p class="intro">This week, we assessed eight sermons from widely viewed U.S. church YouTube channels. Here's what emerged.</p>
         </div>
+
+        <p class="week-date">Week of March 30, 2026</p>
+        <p class="intro">This week, we assessed eight sermons from widely viewed U.S. church YouTube channels. Here's what emerged.</p>
 
         <!-- HOW TO READ -->
         <div class="how-to-read">
