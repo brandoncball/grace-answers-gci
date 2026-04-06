@@ -65,46 +65,56 @@
 
         .temperature-section {
             text-align: center;
-            padding: 40px 24px;
+            padding: 48px 24px;
             margin: 32px 0;
-            background: linear-gradient(180deg, #F9F5EC 0%, #FAF8F4 100%);
-            border-radius: 8px;
+            background: linear-gradient(180deg, #2A3040 0%, #4A5868 33%, #687888 66%, #7CA0BD 100%);
+            border-radius: 12px;
+            color: white;
+        }
+
+        .weather-icon {
+            margin: 0 auto 16px;
         }
 
         .sky-bar {
             width: 100%;
-            height: 120px;
+            height: 32px;
             background: linear-gradient(90deg, #7A3B3B 0%, #6B4040 49%, #8A8078 50%, #9A9590 64%, #8899A8 65%, #7CA0BD 79%, #5B98C4 80%, #4A90C4 89%, #3A88CC 90%, #2E7EB8 100%);
-            border-radius: 8px;
+            border-radius: 16px;
             position: relative;
-            margin: 24px 0;
-            box-shadow: 0 4px 12px rgba(26, 22, 16, 0.1);
+            margin: 24px 0 8px;
         }
 
         .sky-marker {
             position: absolute;
-            top: 0;
-            width: 3px;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
+            top: -4px;
+            width: 6px;
+            height: 40px;
+            background-color: #ffffff;
             left: 70%;
-            border-radius: 2px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
         }
 
         .sky-labels {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 0;
-            font-size: 13px;
-            color: #5A5450;
-            font-weight: 500;
+            position: relative;
+            height: 28px;
+            margin-bottom: 12px;
         }
 
         .sky-label {
-            text-align: center;
-            flex: 1;
+            position: absolute;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: #5A5450;
+            font-weight: 500;
+            white-space: nowrap;
         }
+        .sky-label-storm { left: 24.5%; }
+        .sky-label-overcast { left: 57%; }
+        .sky-label-cloudy { left: 72%; }
+        .sky-label-clear { left: 84.5%; }
+        .sky-label-skies { left: 95%; }
 
         .score-display {
             display: flex;
@@ -118,7 +128,7 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 72px;
             font-weight: 700;
-            color: #7CA0BD;
+            color: #ffffff;
             line-height: 1;
         }
 
@@ -126,12 +136,12 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 32px;
             font-weight: 500;
-            color: #2A2520;
+            color: rgba(255,255,255,0.95);
         }
 
         .score-meta {
             font-size: 16px;
-            color: #5A5450;
+            color: rgba(255,255,255,0.75);
             margin-top: 8px;
         }
 
@@ -485,20 +495,35 @@ The Sunday Forecast measures not what is said about Jesus, but what is doing the
 </div>
 
 <div class="temperature-section">
+    <div class="weather-icon">
+        <svg viewBox="-30 -10 60 60" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="12" r="12" fill="#D4B85C" opacity="0.7"/>
+            <line x1="10" y1="-4" x2="10" y2="-9" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <line x1="22" y1="6" x2="26" y2="3" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <line x1="24" y1="16" x2="28" y2="18" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <ellipse cx="-4" cy="30" rx="26" ry="14" fill="#8899A8" opacity="0.9"/>
+            <ellipse cx="-16" cy="24" rx="16" ry="11" fill="#94A4B4"/>
+            <ellipse cx="8" cy="22" rx="18" ry="12" fill="#94A4B4"/>
+            <ellipse cx="-4" cy="20" rx="14" ry="10" fill="#A4B4C4"/>
+        </svg>
+    </div>
     <div class="score-display">
         <div class="score-number">70</div>
         <div class="score-label">Partly Cloudy</div>
         <div class="score-meta">Range: 37–88 across 6 sermons</div>
     </div>
+</div>
+
+<div style="max-width: 900px; margin: 0 auto; padding: 0 24px;">
     <div class="sky-bar">
         <div class="sky-marker"></div>
     </div>
     <div class="sky-labels">
-        <div class="sky-label">Storm Warning</div>
-        <div class="sky-label">Overcast</div>
-        <div class="sky-label">Partly Cloudy</div>
-        <div class="sky-label">Mostly Clear</div>
-        <div class="sky-label">Clear Skies</div>
+        <div class="sky-label sky-label-storm">Storm Warning</div>
+        <div class="sky-label sky-label-overcast">Overcast</div>
+        <div class="sky-label sky-label-cloudy">Partly Cloudy</div>
+        <div class="sky-label sky-label-clear">Mostly Clear</div>
+        <div class="sky-label sky-label-skies">Clear Skies</div>
     </div>
 </div>
 
