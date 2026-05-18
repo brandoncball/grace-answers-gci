@@ -8,15 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body {
-  font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #F9F5EC;
-  color: #1A1610;
-  line-height: 1.65;
-  font-size: 19px;
-}
+* { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
+body { font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; background: #F9F5EC; color: #1A1610; line-height: 1.65; font-size: 19px; }
 p, li, td, span, div.patterns p, .fast-take, .cat-desc, .grade-context, .dist-footnote, footer { font-size: inherit !important; }
 h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; color: #1A1610; }
 .container { max-width: 760px; margin: 0 auto; padding: 36px 28px; }
@@ -25,157 +18,37 @@ h1.title { font-size: 36px; margin: 0 0 4px; letter-spacing: 0.2px; }
 .tagline { font-style: italic; color: #6B5E48; font-size: 16px; margin: 0 0 4px; }
 .intro { font-size: 15px; color: #5A4C2A; margin: 8px 0 0; }
 .orient { font-style: italic; color: #5A4C2A; text-align: center; padding: 14px 8px; border-top: 1px solid #E0DCD0; border-bottom: 1px solid #E0DCD0; margin: 20px 0; font-size: 15px; }
-
-.score-header {
-  background: linear-gradient(180deg, #2d1f2f 0%, #4a2a3a 35%, #6b3a3a 70%, #7A3B3B 100%);
-  border-radius: 16px;
-  padding: 36px 24px;
-  text-align: center;
-  color: white;
-  margin: 24px 0;
-}
+.score-header { background: linear-gradient(180deg, #2d1f2f 0%, #4a2a3a 35%, #6b3a3a 70%, #7A3B3B 100%); border-radius: 16px; padding: 36px 24px; text-align: center; color: white; margin: 24px 0; }
 .score-header .weather-icon { display: inline-block; margin-bottom: 8px; }
-.score-header .score {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 600;
-  font-size: 80pt;
-  line-height: 1;
-  margin: 4px 0 0;
-}
-.score-header .label {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22pt;
-  font-weight: 600;
-  margin: 6px 0 0;
-  color: rgba(255,255,255,0.95);
-}
+.score-header .score { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 80pt; line-height: 1; margin: 4px 0 0; }
+.score-header .label { font-family: 'Cormorant Garamond', serif; font-size: 22pt; font-weight: 600; margin: 6px 0 0; color: rgba(255,255,255,0.95); }
 .score-header .meta { font-size: 13px; opacity: 0.85; margin-top: 6px; }
-
-/* Final Score Block (mirrors homepage card) */
-.final-score-block {
-  max-width: 480px;
-  margin: 24px auto;
-  background: #1A1610;
-  border: 1px solid rgba(201,168,76,0.2);
-  border-radius: 12px;
-  padding: 32px;
-  color: #F9F5EC;
-}
-.fsb-label {
-  color: #C9A84C;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 11px;
-  font-weight: 600;
-  text-align: center;
-}
-.fsb-date {
-  color: rgba(249,245,236,0.7);
-  font-size: 13px;
-  text-align: center;
-  margin-top: 4px;
-}
+.final-score-block { max-width: 480px; margin: 24px auto; background: #1A1610; border: 1px solid rgba(201,168,76,0.2); border-radius: 12px; padding: 32px; color: #F9F5EC; }
+.fsb-label { color: #C9A84C; text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 600; text-align: center; }
+.fsb-date { color: rgba(249,245,236,0.7); font-size: 13px; text-align: center; margin-top: 4px; }
 .fsb-icon { text-align: center; margin: 16px 0 6px; }
 .fsb-score-row { text-align: center; }
-.fsb-score {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 72pt;
-  font-weight: 600;
-  line-height: 1;
-  color: #F9F5EC;
-}
-.fsb-grade {
-  font-size: 28pt;
-  font-weight: 600;
-  color: #C9A84C;
-  margin-left: 10px;
-}
-.fsb-tagline {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
-  font-style: italic;
-  color: rgba(249,245,236,0.85);
-  text-align: center;
-  margin-top: 6px;
-}
-.fsb-rollups { margin-top: 22px; }
-.fsb-row { margin: 12px 0; }
+.fsb-score { font-family: 'Cormorant Garamond', serif; font-size: 72pt; font-weight: 600; line-height: 1; color: #F9F5EC; }
+.fsb-grade { font-size: 28pt; font-weight: 600; color: #C9A84C; margin-left: 10px; }
+.fsb-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: rgba(249,245,236,0.85); text-align: center; margin-top: 6px; }
+.fsb-rollups { margin-top: 22px; } .fsb-row { margin: 12px 0; }
 .fsb-row > span { display: inline-block; font-size: 13px; color: #F9F5EC; }
 .fsb-row > span:first-child { width: 60%; }
 .fsb-row > span:nth-child(2) { width: 38%; text-align: right; color: #C9A84C; font-weight: 500; }
 .fsb-bar { height: 6px; background: rgba(201,168,76,0.15); border-radius: 3px; margin-top: 4px; overflow: hidden; }
 .fsb-bar > .fill { height: 100%; background: #C9A84C; border-radius: 3px; }
 .fsb-footer { text-align: center; margin-top: 20px; font-size: 12px; color: rgba(249,245,236,0.6); }
-
-/* Sky bar */
 .sky-bar-section { margin: 36px 0 56px; position: relative; }
-.sky-bar {
-  height: 32px;
-  border-radius: 16px;
-  background: linear-gradient(90deg, #7A3B3B 0%, #6B4040 49%, #8A8078 50%, #9A9590 64%, #8899A8 65%, #7CA0BD 79%, #5B98C4 80%, #4A90C4 89%, #3A88CC 90%, #2E7EB8 100%);
-  position: relative;
-}
-.sky-marker {
-  position: absolute;
-  top: -4px;
-  left: calc(9 * 1%);
-  width: 3px;
-  height: 40px;
-  background: white;
-  border-radius: 2px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.4);
-  transform: translateX(-50%);
-}
+.sky-bar { height: 32px; border-radius: 16px; background: linear-gradient(90deg, #7A3B3B 0%, #6B4040 40%, #8A8078 41%, #9A9590 55%, #8899A8 56%, #7CA0BD 70%, #5B98C4 71%, #4A90C4 85%, #3A88CC 86%, #2E7EB8 100%); position: relative; }
+.sky-marker { position: absolute; top: -4px; left: calc(13 * 1%); width: 3px; height: 40px; background: white; border-radius: 2px; box-shadow: 0 0 8px rgba(0,0,0,0.4); transform: translateX(-50%); }
 .sky-bar-labels { position: relative; height: 56px; margin-top: 6px; }
-.sky-bar-labels .sb-label {
-  position: absolute;
-  font-size: 0.75rem;
-  color: #6B5E48;
-  transform: translateX(-50%);
-  white-space: nowrap;
-}
-.sky-bar-labels .row1 { top: 12px; }
-.sky-bar-labels .row2 { top: 34px; }
-
-/* Patterns */
-.patterns h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 11.5pt;
-  font-weight: 600;
-  color: #C9A84C;
-  margin: 18px 0 4px;
-  letter-spacing: 0.3px;
-}
-.patterns h3:first-child { margin-top: 0; }
-.patterns p { margin: 0 0 8px; }
-
-.pull-quote {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 14pt;
-  font-weight: 600;
-  color: #1A1610;
-  text-align: center;
-  margin: 28px 20px;
-  padding: 18px 24px;
-  border-top: 2px solid #C9A84C;
-  border-bottom: 2px solid #C9A84C;
-  line-height: 1.45;
-}
-
-/* Category bars */
-.cat-section { margin: 36px 0; }
-.cat-tier { margin-bottom: 22px; }
-.tier-label {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #8C6A22;
-  padding: 12px 0 6px;
-  border-bottom: 1px solid #E0DCD0;
-  margin-bottom: 10px;
-}
+.sky-bar-labels .sb-label { position: absolute; font-size: 0.75rem; color: #6B5E48; transform: translateX(-50%); white-space: nowrap; }
+.sky-bar-labels .row1 { top: 12px; } .sky-bar-labels .row2 { top: 34px; }
+.patterns h3 { font-family: 'Cormorant Garamond', serif; font-size: 11.5pt; font-weight: 600; color: #C9A84C; margin: 18px 0 4px; letter-spacing: 0.3px; }
+.patterns h3:first-child { margin-top: 0; } .patterns p { margin: 0 0 8px; }
+.pull-quote { font-family: 'Cormorant Garamond', serif; font-size: 14pt; font-weight: 600; color: #1A1610; text-align: center; margin: 28px 20px; padding: 18px 24px; border-top: 2px solid #C9A84C; border-bottom: 2px solid #C9A84C; line-height: 1.45; }
+.cat-section { margin: 36px 0; } .cat-tier { margin-bottom: 22px; }
+.tier-label { font-family: 'Cormorant Garamond', serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #8C6A22; padding: 12px 0 6px; border-bottom: 1px solid #E0DCD0; margin-bottom: 10px; }
 .cat-row { margin: 10px 0; }
 .cat-head { display: flex; justify-content: space-between; align-items: baseline; }
 .cat-name { font-weight: 500; font-size: 15px; color: #1A1610; }
@@ -183,81 +56,29 @@ h1.title { font-size: 36px; margin: 0 0 4px; letter-spacing: 0.2px; }
 .cat-bar { height: 8px; background: #EDE5D2; border-radius: 4px; margin-top: 4px; overflow: hidden; }
 .cat-bar .fill { height: 100%; border-radius: 4px; }
 .cat-desc { font-size: 13px; color: #6B5E48; margin-top: 3px; line-height: 1.45; }
-
 .callout-row { display: flex; gap: 14px; margin: 14px 0; }
-.callout-box {
-  flex: 1;
-  background: white;
-  border: 1px solid #E0DCD0;
-  border-radius: 8px;
-  padding: 12px 14px;
-}
+.callout-box { flex: 1; background: white; border: 1px solid #E0DCD0; border-radius: 8px; padding: 12px 14px; }
 .callout-box .callout-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #8C6A22; margin-bottom: 4px; }
 .callout-box .callout-line { font-size: 13px; color: #1A1610; }
-
-/* Grade distribution */
 .dist-tiles { display: flex; gap: 10px; justify-content: center; margin: 18px 0; }
-.dist-tile {
-  flex: 1 1 0;
-  text-align: center;
-  padding: 16px 8px;
-  border-radius: 10px;
-  background: rgba(122,59,59,0.08);
-}
-.dist-tile.g-A { background: rgba(46,126,184,0.08); }
-.dist-tile.g-B { background: rgba(74,144,196,0.08); }
-.dist-tile.g-C { background: rgba(124,160,189,0.08); }
-.dist-tile.g-D { background: rgba(138,128,120,0.08); }
+.dist-tile { flex: 1 1 0; text-align: center; padding: 16px 8px; border-radius: 10px; background: rgba(122,59,59,0.08); }
+.dist-tile.g-A { background: rgba(46,126,184,0.08); } .dist-tile.g-B { background: rgba(74,144,196,0.08); }
+.dist-tile.g-C { background: rgba(124,160,189,0.08); } .dist-tile.g-D { background: rgba(138,128,120,0.08); }
 .dist-tile.g-F { background: rgba(122,59,59,0.10); }
 .dist-tile .icon { margin-bottom: 6px; }
 .dist-tile .grade { font-family: 'Cormorant Garamond', serif; font-size: 22pt; font-weight: 600; line-height: 1; }
-.dist-tile.g-A .grade { color: #2E7EB8; }
-.dist-tile.g-B .grade { color: #4A90C4; }
-.dist-tile.g-C .grade { color: #7CA0BD; }
-.dist-tile.g-D .grade { color: #8A8078; }
+.dist-tile.g-A .grade { color: #2E7EB8; } .dist-tile.g-B .grade { color: #4A90C4; }
+.dist-tile.g-C .grade { color: #7CA0BD; } .dist-tile.g-D .grade { color: #8A8078; }
 .dist-tile.g-F .grade { color: #7A3B3B; }
 .dist-tile .count { font-size: 16px; color: #1A1610; font-weight: 500; margin-top: 4px; }
 .dist-tile .range { font-size: 10px; color: #6B5E48; }
-
 .grade-context { text-align: center; font-size: 13px; color: #5A4C2A; margin-top: 12px; font-style: italic; }
 .dist-footnote { text-align: center; font-size: 12px; color: #8A8078; margin-top: 8px; }
-
-/* How it works */
-.how-it-works {
-  background: white;
-  border: 1px solid #E0DCD0;
-  border-radius: 10px;
-  padding: 18px 22px;
-  margin: 28px 0;
-}
+.how-it-works { background: white; border: 1px solid #E0DCD0; border-radius: 10px; padding: 18px 22px; margin: 28px 0; }
 .how-it-works h2 { margin-top: 0; }
-
-/* CTA */
 .cta { text-align: center; margin: 32px 0 8px; font-size: 14px; color: #5A4C2A; }
-
-footer {
-  text-align: center;
-  padding: 20px 24px 8px;
-  color: #8A8078;
-  font-size: 12px;
-  border-top: 1px solid #E0DCD0;
-  margin-top: 28px;
-}
-
-@media (max-width: 767px) {
-  .container { padding: 22px 16px; }
-  h1.title { font-size: 28px; }
-  .score-header { padding: 28px 16px; }
-  .score-header .score { font-size: 48pt; }
-  .score-header .label { font-size: 18pt; }
-  .final-score-block { padding: 24px 18px; }
-  .fsb-score { font-size: 56pt; }
-  .sky-bar-labels .sb-label { font-size: 0.65rem; }
-  .pull-quote { font-size: 12.5pt; margin: 16px 8px; padding: 12px 16px; }
-  .callout-row { flex-direction: column; gap: 8px; }
-  .dist-tiles { flex-wrap: wrap; }
-  .dist-tile { flex: 1 1 calc(33% - 10px); min-width: 120px; }
-}
+footer { text-align: center; padding: 20px 24px 8px; color: #8A8078; font-size: 12px; border-top: 1px solid #E0DCD0; margin-top: 28px; }
+@media (max-width: 767px) { .container { padding: 22px 16px; } h1.title { font-size: 28px; } .score-header { padding: 28px 16px; } .score-header .score { font-size: 48pt; } .score-header .label { font-size: 18pt; } .final-score-block { padding: 24px 18px; } .fsb-score { font-size: 56pt; } .sky-bar-labels .sb-label { font-size: 0.65rem; } .pull-quote { font-size: 12.5pt; margin: 16px 8px; padding: 12px 16px; } .callout-row { flex-direction: column; gap: 8px; } .dist-tiles { flex-wrap: wrap; } .dist-tile { flex: 1 1 calc(33% - 10px); min-width: 120px; } }
 </style>
 </head>
 <body>
@@ -266,42 +87,24 @@ footer {
 <header class="hdr">
   <h1 class="title">The Sunday Forecast — May 17, 2026</h1>
   <p class="tagline"><em>A weekly snapshot of grace clarity across the world's most widely viewed English-language pulpits.</em></p>
-  <p class="intro">11 sermons scored this week. The watchlist's lowest weekly average in the past month — a 13-point drop from last Sunday.</p>
+  <p class="intro">11 sermons scored this week. One sermon broke the F band — the first non-F reading in two weeks. Methodology refined this week (see below).</p>
 </header>
 
 <div class="orient"><em>The Sunday Forecast measures not what is said about Jesus, but what is doing the theological work in the message.</em></div>
 
 <section class="score-header">
-  <div class="weather-icon"><svg viewBox="-30 -10 60 60" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/>
-  <ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/>
-  <ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/>
-  <ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/>
-  <path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-</svg></div>
-  <div class="score">9</div>
+  <div class="weather-icon"><svg viewBox="-30 -10 60 60" width="80" height="80" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div>
+  <div class="score">13</div>
   <div class="label">Storm Warning</div>
-  <div class="meta">11 sermons scored · Range: 0 to 58</div>
+  <div class="meta">11 sermons scored · Range: 5 to 58</div>
 </section>
 
 <section class="final-score-block">
   <div class="fsb-label">This Week's Average</div>
   <div class="fsb-date">Week of May 17, 2026</div>
-  <div class="fsb-icon"><svg viewBox="-30 -10 60 60" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/>
-  <ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/>
-  <ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/>
-  <ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/>
-  <path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-</svg></div>
+  <div class="fsb-icon"><svg viewBox="-30 -10 60 60" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div>
   <div class="fsb-score-row">
-    <span class="fsb-score">9</span><span class="fsb-grade">F</span>
+    <span class="fsb-score">13</span><span class="fsb-grade">F</span>
   </div>
   <div class="fsb-tagline"><em>The Finished Work Was Absent or Contradicted</em></div>
   <div class="fsb-rollups">
@@ -313,27 +116,25 @@ footer {
   <div class="fsb-footer">11 sermons scored · Updated weekly</div>
 </section>
 
-<p style="text-align: center; font-size: 16px; font-weight: 500; color: #5A4C2A; margin: 24px 0;"><em>This week: every sermon landed in the F band — the first all-F week the index has recorded.</em></p>
+<p style="text-align: center; font-size: 16px; font-weight: 500; color: #5A4C2A; margin: 24px 0;"><em>This week: one sermon found the C band; ten landed in F. The pattern is still dominant, but the floor is no longer the only place sermons live.</em></p>
 
 <section class="sky-bar-section">
-  <div class="sky-bar">
-    <div class="sky-marker"></div>
-  </div>
+  <div class="sky-bar"><div class="sky-marker"></div></div>
   <div class="sky-bar-labels">
-    <span class="sb-label row1" style="left: 24.5%;">Storm warning</span>
-    <span class="sb-label row2" style="left: 57%;">Overcast</span>
-    <span class="sb-label row1" style="left: 72%;">Partly cloudy</span>
-    <span class="sb-label row2" style="left: 84.5%;">Mostly clear</span>
-    <span class="sb-label row1" style="left: 95%;">Clear skies</span>
+    <span class="sb-label row1" style="left: 20%;">Storm warning</span>
+    <span class="sb-label row2" style="left: 48%;">Overcast</span>
+    <span class="sb-label row1" style="left: 63%;">Partly cloudy</span>
+    <span class="sb-label row2" style="left: 78%;">Mostly clear</span>
+    <span class="sb-label row1" style="left: 93%;">Clear skies</span>
   </div>
 </section>
 
 <section class="patterns">
   <h3>The Temperature</h3>
-  <p>A bottom-of-the-month week. The aggregate landed at 9/100, the lowest reading the watchlist has produced in any week scored to date. Not absent in language — sermons mentioned the cross, named Jesus, prayed warmly — but absent as the governing foundation of the message. Every scored sermon landed in the F band. Not one cleared even the Mixed range.</p>
+  <p>The aggregate landed at 13/100, with the watchlist's first non-F sermon in two weeks pulling the top end up to 58 — a C, in the Mixed-Grace-but-Diluted band. Not absent in language across the watchlist — sermons mentioned the cross, named Jesus, prayed warmly — but in ten of eleven, the finished work did not function as the foundation of the message.</p>
 
   <h3>The Governing Pattern</h3>
-  <p>The diagnostic question the index asks isn't "Was Jesus mentioned?" It's "What was doing the theological work?" This week, the answer across every scored sermon was the listener's response. <em>The believer was on the clock.</em> One sermon framed the entire week's spiritual outlook as a function of personal alignment. Another asked the listener to "position yourself" for a breakthrough. Another reframed an Old Testament command to rebuild a temple as a present-tense imperative for marriages today. The cross showed up as decoration, not as foundation.</p>
+  <p>The diagnostic question isn't "Was Jesus mentioned?" It's "What was doing the theological work?" This week, in ten of eleven scored sermons, the answer was the listener's response. <em>The believer was on the clock.</em> One sermon framed the entire week's spiritual outlook as a function of personal alignment. Another asked the listener to "position yourself" for a breakthrough. Another reframed an Old Testament command to rebuild a temple as a present-tense imperative for marriages today. The cross showed up as decoration, not as foundation.</p>
 
   <h3>Warm Words, Ungrounded</h3>
   <p>The most striking pattern: sermons that used warm, encouraging, even affectionate language while leaving the finished work entirely outside the message's load-bearing structure. <em>Nearness without explanation is sentimentality, not theology.</em> A listener could leave several of these sermons feeling moved without ever encountering a sentence stating that they are fully accepted by God because of what Christ already accomplished. The gospel was implied, gestured at, sometimes tacked on as a closing prayer — but never functioning as the spine.</p>
@@ -342,7 +143,10 @@ footer {
   <p>Old Testament texts handed to New Covenant believers without translation. A passage about rebuilding a temple becoming a marriage-renewal blueprint. A pre-cross encounter with a religious self-justifier turned into a Christian behavioral test. A pre-resurrection wisdom text mined for present-day life optimization. The Old-vs-New Covenant rollup landed at 2.0 / 10 across the watchlist — the lowest of the four headline metrics. <em>If everything is for you, nothing is finished.</em></p>
 
   <h3>The Bright Spot</h3>
-  <p>The week's highest scorer (58/100, still in the F band) honored honestly. It carried a strong image of just judgment falling on Christ rather than the believer — a clean substitutionary moment in the body of the message. It got closer than anything else in the watchlist this week. What kept it below the C threshold was the absence of a clear union-with-Christ frame; the gospel was preached at the listener instead of grounded in the listener's already-completed standing. That gap is what the Core Lock standard — a threshold requiring the foundational claim of the gospel to be explicitly stated — is built to catch.</p>
+  <p>The week's highest scorer (58/100, C — Mixed Grace) honored honestly. It carried a strong image of just judgment falling on Christ rather than the believer — a clean substitutionary moment in the body of the message. What kept it from B was the absence of a clear union-with-Christ frame; the gospel was preached at the listener instead of grounded in the listener's already-completed standing. That gap is what the Core Lock standard — a threshold requiring the foundational claim of the gospel to be explicitly stated — is built to catch. A sermon that gets close enough to land in C is a marker the index can work with.</p>
+
+  <h3>Methodology Note</h3>
+  <p>The Index's scoring rubric was refined this week. Deduction stacking is now capped at −25 (previously uncompounded), and the floor is now 5 (previously 0), with 0 reserved for sermons that explicitly contradict the gospel. The band boundaries were also rebalanced so the four upper grades (A, B, C, D) cover equal 15-point widths instead of compressing toward the top. These changes preserve diagnostic distance between sermons clustered near the floor without shifting where any given sermon actually lives. Under the previous rubric this week's average was 9; under the refined rubric it is 13. The story the data tells has not changed.</p>
 
   <div class="pull-quote">When the cross is decoration and the listener is the driver, even a sincere sermon ends up asking the audience to finish what only Christ could finish.</div>
 
@@ -357,7 +161,6 @@ footer {
     <div class="callout-box"><div class="callout-label">Top</div><div class="callout-line"><strong>Finished Work Clarity (4.2/15)</strong> — the only metric where most sermons logged any meaningful score. Even here, the average sat under a third of the available points.</div></div>
     <div class="callout-box"><div class="callout-label">Bottom</div><div class="callout-line"><strong>Performance Drift (1.5/10)</strong> — almost every sermon handed the listener something to do. The category measures how much. This week, a lot.</div></div>
   </div>
-
   <div class="cat-tier">
     <div class="tier-label">Theological Foundation</div>
     <div class="cat-row">
@@ -440,64 +243,19 @@ footer {
 <section>
   <h2 style="font-size: 22px;">The Distribution — Grade Breakdown</h2>
   <div class="dist-tiles">
-    <div class="dist-tile g-A"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="0" cy="16" r="13" fill="#D4B85C"/>
-  <line x1="0" y1="-4" x2="0" y2="-12" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-  <line x1="0" y1="36" x2="0" y2="44" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-  <line x1="-18" y1="16" x2="-26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-  <line x1="18" y1="16" x2="26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-  <line x1="-13" y1="3" x2="-18" y2="-2" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-  <line x1="13" y1="3" x2="18" y2="-2" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-  <line x1="-13" y1="29" x2="-18" y2="34" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-  <line x1="13" y1="29" x2="18" y2="34" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/>
-</svg></div><div class="grade">A</div><div class="count">0</div><div class="range">90–100</div></div>
-    <div class="dist-tile g-B"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="0" cy="16" r="14" fill="#4A90C4" opacity="0.15"/>
-  <circle cx="0" cy="16" r="11" fill="#D4B85C" opacity="0.85"/>
-  <line x1="0" y1="-2" x2="0" y2="-8" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="14" y1="4" x2="18" y2="0" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="16" y1="18" x2="22" y2="20" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="-14" y1="4" x2="-18" y2="0" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="-16" y1="18" x2="-22" y2="20" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <ellipse cx="6" cy="32" rx="16" ry="7" fill="#B8CCE0" opacity="0.5"/>
-  <ellipse cx="-2" cy="30" rx="10" ry="6" fill="#C4D6E8" opacity="0.4"/>
-</svg></div><div class="grade">B</div><div class="count">0</div><div class="range">80–89</div></div>
-    <div class="dist-tile g-C"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="10" cy="12" r="12" fill="#D4B85C" opacity="0.7"/>
-  <line x1="10" y1="-4" x2="10" y2="-9" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-  <line x1="22" y1="6" x2="26" y2="3" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-  <line x1="24" y1="16" x2="28" y2="18" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-  <ellipse cx="-4" cy="30" rx="26" ry="14" fill="#8899A8" opacity="0.9"/>
-  <ellipse cx="-16" cy="24" rx="16" ry="11" fill="#94A4B4"/>
-  <ellipse cx="8" cy="22" rx="18" ry="12" fill="#94A4B4"/>
-  <ellipse cx="-4" cy="20" rx="14" ry="10" fill="#A4B4C4"/>
-</svg></div><div class="grade">C</div><div class="count">0</div><div class="range">65–79</div></div>
-    <div class="dist-tile g-D"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="0" cy="30" rx="30" ry="16" fill="#8A8078" opacity="0.8"/>
-  <ellipse cx="-14" cy="24" rx="18" ry="12" fill="#9A9590"/>
-  <ellipse cx="14" cy="22" rx="20" ry="13" fill="#9A9590"/>
-  <ellipse cx="0" cy="20" rx="16" ry="12" fill="#B0ACA6"/>
-  <ellipse cx="-8" cy="16" rx="12" ry="9" fill="#B8B4AE"/>
-  <ellipse cx="8" cy="15" rx="13" ry="10" fill="#B8B4AE"/>
-</svg></div><div class="grade">D</div><div class="count">0</div><div class="range">50–64</div></div>
-    <div class="dist-tile g-F"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/>
-  <ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/>
-  <ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/>
-  <ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/>
-  <path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-</svg></div><div class="grade">F</div><div class="count">11</div><div class="range">0–49</div></div>
+    <div class="dist-tile g-A"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><circle cx="0" cy="16" r="13" fill="#D4B85C"/><line x1="0" y1="-4" x2="0" y2="-12" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="0" y1="36" x2="0" y2="44" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="-18" y1="16" x2="-26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="16" x2="26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="-13" y1="3" x2="-18" y2="-2" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="13" y1="3" x2="18" y2="-2" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="-13" y1="29" x2="-18" y2="34" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="13" y1="29" x2="18" y2="34" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/></svg></div><div class="grade">A</div><div class="count">0</div><div class="range">86–100</div></div>
+    <div class="dist-tile g-B"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><circle cx="0" cy="16" r="14" fill="#4A90C4" opacity="0.15"/><circle cx="0" cy="16" r="11" fill="#D4B85C" opacity="0.85"/><line x1="0" y1="-2" x2="0" y2="-8" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="14" y1="4" x2="18" y2="0" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="16" y1="18" x2="22" y2="20" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-14" y1="4" x2="-18" y2="0" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-16" y1="18" x2="-22" y2="20" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><ellipse cx="6" cy="32" rx="16" ry="7" fill="#B8CCE0" opacity="0.5"/><ellipse cx="-2" cy="30" rx="10" ry="6" fill="#C4D6E8" opacity="0.4"/></svg></div><div class="grade">B</div><div class="count">0</div><div class="range">71–85</div></div>
+    <div class="dist-tile g-C"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="12" r="12" fill="#D4B85C" opacity="0.7"/><line x1="10" y1="-4" x2="10" y2="-9" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="22" y1="6" x2="26" y2="3" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="24" y1="16" x2="28" y2="18" stroke="#D4B85C" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><ellipse cx="-4" cy="30" rx="26" ry="14" fill="#8899A8" opacity="0.9"/><ellipse cx="-16" cy="24" rx="16" ry="11" fill="#94A4B4"/><ellipse cx="8" cy="22" rx="18" ry="12" fill="#94A4B4"/><ellipse cx="-4" cy="20" rx="14" ry="10" fill="#A4B4C4"/></svg></div><div class="grade">C</div><div class="count">1</div><div class="range">56–70</div></div>
+    <div class="dist-tile g-D"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="30" rx="30" ry="16" fill="#8A8078" opacity="0.8"/><ellipse cx="-14" cy="24" rx="18" ry="12" fill="#9A9590"/><ellipse cx="14" cy="22" rx="20" ry="13" fill="#9A9590"/><ellipse cx="0" cy="20" rx="16" ry="12" fill="#B0ACA6"/><ellipse cx="-8" cy="16" rx="12" ry="9" fill="#B8B4AE"/><ellipse cx="8" cy="15" rx="13" ry="10" fill="#B8B4AE"/></svg></div><div class="grade">D</div><div class="count">0</div><div class="range">41–55</div></div>
+    <div class="dist-tile g-F"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div><div class="grade">F</div><div class="count">10</div><div class="range">5–40</div></div>
   </div>
-  <p class="grade-context">First fully F-band week the index has recorded. The previous low was last week's distribution (1 C, 11 F). The trend across the past month has run downward.</p>
-  <p class="dist-footnote">1 watchlist channel excluded (no qualifying sermon uploaded this week).</p>
+  <p class="grade-context">One sermon landed in the C band — the first non-F reading in two weeks. The remaining ten sat in F. The trend across the past month has run downward; this week the floor stopped getting lower.</p>
+  <p class="dist-footnote">1 watchlist channel excluded (no qualifying sermon uploaded this week). Letter grade bands refined 2026-05-18.</p>
 </section>
 
 <section class="how-it-works">
   <h2 style="font-size: 18px;">The Index — How This Works</h2>
-  <p style="margin: 0;">The Grace Clarity Index (GCI) measures how clearly a sermon articulates the finished work of Christ as the foundation of the believer's identity, security, and righteousness — and whether the apostolic indicative-imperative pattern is honored when fruit and calling come up. It does not evaluate sincerity or salvation. Each sermon is scored across 13 categories totaling 100 points. Grades: A 90–100, B 80–89, C 65–79, D 50–64, F 0–49. Two hard rules cap the result: the Ceiling Rule limits any sermon whose foundation is not the finished work to a maximum of 70, and the Core Lock Rule limits any sermon that does not explicitly state full righteousness in Christ alone to a maximum of 60.</p>
+  <p style="margin: 0;">The Grace Clarity Index (GCI) measures how clearly a sermon articulates the finished work of Christ as the foundation of the believer's identity, security, and righteousness — and whether the apostolic indicative-imperative pattern is honored when fruit and calling come up. It does not evaluate sincerity or salvation. Each sermon is scored across 13 categories totaling 100 points. Grades: A 86–100, B 71–85, C 56–70, D 41–55, F 5–40. Two hard rules cap the result: the Ceiling Rule limits any sermon whose foundation is not the finished work to a maximum of 70, and the Core Lock Rule limits any sermon that does not explicitly state full righteousness in Christ alone to a maximum of 60.</p>
 </section>
 
 <section class="cta">
@@ -506,31 +264,23 @@ footer {
 </section>
 
 <footer>
-  The Grace Clarity Index is a theological assessment tool developed by Grace Answers. · graceanswers.com · Published May 18, 2026 · Based on 11 sermons from widely viewed English-language church YouTube channels.
+  The Grace Clarity Index is a theological assessment tool developed by Grace Answers. · graceanswers.com · Published May 18, 2026 · Based on 11 sermons from widely viewed English-language church YouTube channels. Rubric refined 2026-05-18.
 </footer>
 
 </div>
 
-<!-- IFRAME RESIZE BROADCASTER -->
 <script>
 (function(){
   function sendHeight(){
     if(window._obs) window._obs.disconnect();
-    document.documentElement.style.height='0';
-    document.body.style.height='0';
+    document.documentElement.style.height='0'; document.body.style.height='0';
     var h=document.body.scrollHeight;
-    document.body.style.height='';
-    document.documentElement.style.height='';
+    document.body.style.height=''; document.documentElement.style.height='';
     if(window._obs) window._obs.observe(document.body,{childList:true,subtree:true,attributes:true});
     window.parent.postMessage({type:'resize', height: Math.max(h,300)}, '*');
   }
   sendHeight();
-  window.addEventListener('load', function(){
-    sendHeight();
-    setTimeout(sendHeight, 500);
-    setTimeout(sendHeight, 2000);
-    setTimeout(sendHeight, 5000);
-  });
+  window.addEventListener('load', function(){ sendHeight(); setTimeout(sendHeight, 500); setTimeout(sendHeight, 2000); setTimeout(sendHeight, 5000); });
   window.addEventListener('resize', sendHeight);
   if(typeof MutationObserver !== 'undefined'){
     window._obs=new MutationObserver(sendHeight);
