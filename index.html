@@ -1,286 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Sunday Forecast — May 24, 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>The Sunday Forecast — May 31, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
-* { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
-body { font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; background: #F9F5EC; color: #1A1610; line-height: 1.65; font-size: 19px; }
-p, li, td, span, div.patterns p, .fast-take, .cat-desc, .grade-context, .dist-footnote, footer { font-size: inherit !important; }
-h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; color: #1A1610; }
-.container { max-width: 760px; margin: 0 auto; padding: 36px 28px; }
-header.hdr { text-align: center; margin-bottom: 18px; }
-h1.title { font-size: 36px; margin: 0 0 4px; letter-spacing: 0.2px; }
-.tagline { font-style: italic; color: #6B5E48; font-size: 16px; margin: 0 0 4px; }
-.intro { font-size: 15px; color: #5A4C2A; margin: 8px 0 0; }
-.orient { font-style: italic; color: #5A4C2A; text-align: center; padding: 14px 8px; border-top: 1px solid #E0DCD0; border-bottom: 1px solid #E0DCD0; margin: 20px 0; font-size: 15px; }
-.score-header { background: linear-gradient(180deg, #2d1f2f 0%, #4a2a3a 35%, #6b3a3a 70%, #7A3B3B 100%); border-radius: 16px; padding: 36px 24px; text-align: center; color: white; margin: 24px 0; }
-.score-header .weather-icon { display: inline-block; margin-bottom: 8px; }
-.score-header .score { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 80pt; line-height: 1; margin: 4px 0 0; }
-.score-header .label { font-family: 'Cormorant Garamond', serif; font-size: 22pt; font-weight: 600; margin: 6px 0 0; color: rgba(255,255,255,0.95); }
-.score-header .meta { font-size: 13px; opacity: 0.85; margin-top: 6px; }
-.final-score-block { max-width: 480px; margin: 24px auto; background: #1A1610; border: 1px solid rgba(201,168,76,0.2); border-radius: 12px; padding: 32px; color: #F9F5EC; }
-.fsb-label { color: #C9A84C; text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 600; text-align: center; }
-.fsb-date { color: rgba(249,245,236,0.7); font-size: 13px; text-align: center; margin-top: 4px; }
-.fsb-icon { text-align: center; margin: 16px 0 6px; }
-.fsb-score-row { text-align: center; }
-.fsb-score { font-family: 'Cormorant Garamond', serif; font-size: 72pt; font-weight: 600; line-height: 1; color: #F9F5EC; }
-.fsb-grade { font-size: 28pt; font-weight: 600; color: #C9A84C; margin-left: 10px; }
-.fsb-tagline { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: rgba(249,245,236,0.85); text-align: center; margin-top: 6px; }
-.fsb-rollups { margin-top: 22px; } .fsb-row { margin: 12px 0; }
-.fsb-row > span { display: inline-block; font-size: 13px; color: #F9F5EC; }
-.fsb-row > span:first-child { width: 60%; }
-.fsb-row > span:nth-child(2) { width: 38%; text-align: right; color: #C9A84C; font-weight: 500; }
-.fsb-bar { height: 6px; background: rgba(201,168,76,0.15); border-radius: 3px; margin-top: 4px; overflow: hidden; }
-.fsb-bar > .fill { height: 100%; background: #C9A84C; border-radius: 3px; }
-.fsb-footer { text-align: center; margin-top: 20px; font-size: 12px; color: rgba(249,245,236,0.6); }
-.sky-bar-section { margin: 36px 0 56px; position: relative; }
-.sky-bar { height: 32px; border-radius: 16px; background: linear-gradient(90deg, #7A3B3B 0%, #6B4040 49%, #8A8078 50%, #9A9590 64%, #8899A8 65%, #7CA0BD 79%, #5B98C4 80%, #4A90C4 89%, #3A88CC 90%, #2E7EB8 100%); position: relative; }
-.sky-marker { position: absolute; top: -4px; left: 9%; width: 3px; height: 40px; background: white; border-radius: 2px; box-shadow: 0 0 8px rgba(0,0,0,0.4); transform: translateX(-50%); }
-.sky-bar-labels { position: relative; height: 56px; margin-top: 6px; }
-.sky-bar-labels .sb-label { position: absolute; font-size: 0.75rem; color: #6B5E48; transform: translateX(-50%); white-space: nowrap; }
-.sky-bar-labels .row1 { top: 12px; } .sky-bar-labels .row2 { top: 34px; }
-.patterns h3 { font-family: 'Cormorant Garamond', serif; font-size: 11.5pt; font-weight: 600; color: #C9A84C; margin: 18px 0 4px; letter-spacing: 0.3px; }
-.patterns h3:first-child { margin-top: 0; } .patterns p { margin: 0 0 8px; }
-.pull-quote { font-family: 'Cormorant Garamond', serif; font-size: 14pt; font-weight: 600; color: #1A1610; text-align: center; margin: 28px 20px; padding: 18px 24px; border-top: 2px solid #C9A84C; border-bottom: 2px solid #C9A84C; line-height: 1.45; }
-.cat-section { margin: 36px 0; } .cat-tier { margin-bottom: 22px; }
-.tier-label { font-family: 'Cormorant Garamond', serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #8C6A22; padding: 12px 0 6px; border-bottom: 1px solid #E0DCD0; margin-bottom: 10px; }
-.cat-row { margin: 10px 0; }
-.cat-head { display: flex; justify-content: space-between; align-items: baseline; }
-.cat-name { font-weight: 500; font-size: 15px; color: #1A1610; }
-.cat-score { font-size: 13px; color: #8C6A22; font-weight: 600; }
-.cat-bar { height: 8px; background: #EDE5D2; border-radius: 4px; margin-top: 4px; overflow: hidden; }
-.cat-bar .fill { height: 100%; border-radius: 4px; }
-.cat-desc { font-size: 13px; color: #6B5E48; margin-top: 3px; line-height: 1.45; }
-.callout-row { display: flex; gap: 14px; margin: 14px 0; }
-.callout-box { flex: 1; background: white; border: 1px solid #E0DCD0; border-radius: 8px; padding: 12px 14px; }
-.callout-box .callout-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #8C6A22; margin-bottom: 4px; }
-.callout-box .callout-line { font-size: 13px; color: #1A1610; }
-.dist-tiles { display: flex; gap: 10px; justify-content: center; margin: 18px 0; }
-.dist-tile { flex: 1 1 0; text-align: center; padding: 16px 8px; border-radius: 10px; background: rgba(122,59,59,0.08); }
-.dist-tile.g-A { background: rgba(46,126,184,0.08); } .dist-tile.g-B { background: rgba(74,144,196,0.08); }
-.dist-tile.g-C { background: rgba(124,160,189,0.08); } .dist-tile.g-D { background: rgba(138,128,120,0.08); }
-.dist-tile.g-F { background: rgba(122,59,59,0.10); }
-.dist-tile .icon { margin-bottom: 6px; }
-.dist-tile .grade { font-family: 'Cormorant Garamond', serif; font-size: 22pt; font-weight: 600; line-height: 1; }
-.dist-tile.g-A .grade { color: #2E7EB8; } .dist-tile.g-B .grade { color: #4A90C4; }
-.dist-tile.g-C .grade { color: #7CA0BD; } .dist-tile.g-D .grade { color: #8A8078; }
-.dist-tile.g-F .grade { color: #7A3B3B; }
-.dist-tile .count { font-size: 16px; color: #1A1610; font-weight: 500; margin-top: 4px; }
-.dist-tile .range { font-size: 10px; color: #6B5E48; }
-.grade-context { text-align: center; font-size: 13px; color: #5A4C2A; margin-top: 12px; font-style: italic; }
-.dist-footnote { text-align: center; font-size: 12px; color: #8A8078; margin-top: 8px; }
-.how-it-works { background: white; border: 1px solid #E0DCD0; border-radius: 10px; padding: 18px 22px; margin: 28px 0; }
-.how-it-works h2 { margin-top: 0; }
-.cta { text-align: center; margin: 32px 0 8px; font-size: 14px; color: #5A4C2A; }
-footer { text-align: center; padding: 20px 24px 8px; color: #8A8078; font-size: 12px; border-top: 1px solid #E0DCD0; margin-top: 28px; }
-@media (max-width: 767px) { .container { padding: 22px 16px; } h1.title { font-size: 28px; } .score-header { padding: 28px 16px; } .score-header .score { font-size: 48pt; } .score-header .label { font-size: 18pt; } .final-score-block { padding: 24px 18px; } .fsb-score { font-size: 56pt; } .sky-bar-labels .sb-label { font-size: 0.65rem; } .pull-quote { font-size: 12.5pt; margin: 16px 8px; padding: 12px 16px; } .callout-row { flex-direction: column; gap: 8px; } .dist-tiles { flex-wrap: wrap; } .dist-tile { flex: 1 1 calc(33% - 10px); min-width: 120px; } }
-</style>
-</head>
-<body>
-<div class="container">
-
-<header class="hdr">
-  <h1 class="title">The Sunday Forecast — May 24, 2026</h1>
-  <p class="tagline"><em>A weekly snapshot of grace clarity across the world's most widely viewed English-language pulpits.</em></p>
-  <p class="intro">10 sermons scored this week. The second consecutive week with the entire watchlist in the F band, and the third F-band week in the past four.</p>
-</header>
-
-<div class="orient"><em>The Sunday Forecast measures not what is said about Jesus, but what is doing the theological work in the message.</em></div>
-
-<section class="score-header">
-  <div class="weather-icon"><svg viewBox="-30 -10 60 60" width="80" height="80" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div>
-  <div class="score">9</div>
-  <div class="label">Storm Warning</div>
-  <div class="meta">10 sermons scored · Range: 0 to 39</div>
-</section>
-
-<section class="final-score-block">
-  <div class="fsb-label">This Week's Average</div>
-  <div class="fsb-date">Week of May 24, 2026</div>
-  <div class="fsb-icon"><svg viewBox="-30 -10 60 60" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div>
-  <div class="fsb-score-row">
-    <span class="fsb-score">9</span><span class="fsb-grade">F</span>
-  </div>
-  <div class="fsb-tagline"><em>The Finished Work Was Absent or Contradicted</em></div>
-  <div class="fsb-rollups">
-    <div class="fsb-row"><span>Finished Work Clarity</span><span>3.5 / 15</span><div class="fsb-bar"><div class="fill" style="width: 23.3%"></div></div></div>
-    <div class="fsb-row"><span>Identity in Christ</span><span>2.1 / 10</span><div class="fsb-bar"><div class="fill" style="width: 21.0%"></div></div></div>
-    <div class="fsb-row"><span>Performance Drift</span><span>2.0 / 10</span><div class="fsb-bar"><div class="fill" style="width: 20.0%"></div></div></div>
-    <div class="fsb-row"><span>Old vs. New Covenant</span><span>1.6 / 10</span><div class="fsb-bar"><div class="fill" style="width: 16.0%"></div></div></div>
-  </div>
-  <div class="fsb-footer">10 sermons scored · Updated weekly</div>
-</section>
-
-<p style="text-align: center; font-size: 16px; font-weight: 500; color: #5A4C2A; margin: 24px 0;"><em>This week: every scored sermon landed in F. Last week's lone C disappeared, and the watchlist closed back into the floor.</em></p>
-
-<section class="sky-bar-section">
-  <div class="sky-bar"><div class="sky-marker"></div></div>
-  <div class="sky-bar-labels">
-    <span class="sb-label row1" style="left: 24.5%;">Storm warning</span>
-    <span class="sb-label row2" style="left: 57%;">Overcast</span>
-    <span class="sb-label row1" style="left: 72%;">Partly cloudy</span>
-    <span class="sb-label row2" style="left: 84.5%;">Mostly clear</span>
-    <span class="sb-label row1" style="left: 95%;">Clear skies</span>
-  </div>
-</section>
-
-<section class="patterns">
-  <h3>The Temperature</h3>
-  <p>The aggregate landed at 9/100. Every sermon scored this week sat in the F band. The highest reading (39/100) belonged to a panel-format walkthrough of the pastoral epistles that name-checked the gospel without ever organizing the message around it. Last week's single C — the bright spot that pulled the average two points above the floor — was not repeated.</p>
-
-  <h3>The Governing Pattern</h3>
-  <p>The diagnostic question is not "Was Jesus mentioned?" It is "What was doing the theological work?" This week, in every scored sermon, the answer was the listener's response. <em>The believer was on the clock in ten consecutive pulpits.</em> One sermon framed Spirit-empowered breakthrough as a function of personal declaration. Another taught a marriage how-to that landed the listener on practical behavior changes. A third reframed an exposition on servant leadership into "this is what you must do to be an effective Christian leader." The cross showed up as story, not as ground.</p>
-
-  <h3>Warm Words, Ungrounded</h3>
-  <p>Several sermons used affectionate, encouraging, even tender language while leaving the finished work outside the load-bearing structure. <em>Nearness without explanation is sentimentality, not theology.</em> A listener could leave moved — even genuinely moved — without ever encountering a sentence stating that they are fully accepted by God right now because of what Christ already accomplished. The gospel was implied, gestured at, sometimes tacked on as a closing prayer. It was rarely the spine.</p>
-
-  <h3>Where the Covenant Disappears</h3>
-  <p>Old vs. New Covenant clarity landed at 1.6 / 10 — the lowest of the four headline metrics, and the lowest reading the index has logged on this category. Old Testament narratives were handed to New Covenant believers without translation. A Pentecost text became a manual for personal "supernatural therapy." A pre-resurrection encounter with a religious leader was converted into a present-tense Christian behavioral test. A passage about Christ's ransom was extracted for a leadership talk. <em>If everything is for you, nothing is finished.</em></p>
-
-  <h3>The Bright Spot</h3>
-  <p>The week's highest scorer (39/100, F) was an honest verse-by-verse exposition that produced one of the cleanest substitutionary lines of the week — a clear statement that Christ became sin so that the believer could know the righteousness of God. The line is real. It is also surrounded by an entire message organized around what Christians must do to be effective leaders. That structure is what triggered the Core Lock standard — a threshold requiring that the foundational claim of the gospel be doing the theological work, not just appearing in the sermon. One strong line did not move the foundation.</p>
-
-  <h3>Trend Context</h3>
-  <p>This is the second consecutive week with the entire watchlist in the F band, and the third F-band week in the past four. The weekly average has held at 9/100 for two weeks running. The watchlist is not getting worse — it is settling at a baseline where finished-work clarity is the exception, not the structure.</p>
-
-  <div class="pull-quote">When the cross is decoration and the listener is the driver, even a sincere sermon ends up asking the audience to finish what only Christ could finish.</div>
-
-  <h3>The Editorial</h3>
-  <p>The point of a sermon is not to bring people up to a standard. It is to declare that the standard has already been met for them. When that order gets reversed — when Christian living gets named before Christ's accomplished work gets named — the listener leaves with a weight they were never given to carry. The two-week pattern in this data is what that reversal looks like when it runs across an entire weekend of widely-watched pulpits. Not absent in language. Absent as the governing foundation.</p>
-</section>
-
-<section class="cat-section">
-  <h2 style="font-size: 22px; margin-bottom: 8px;">The Forecast — Category Averages</h2>
-
-  <div class="callout-row">
-    <div class="callout-box"><div class="callout-label">Top</div><div class="callout-line"><strong>Finished Work Clarity (3.5/15)</strong> — the only metric where most sermons logged any meaningful score. The week's average dropped 0.7 from last week, pulled down by the loss of the C-band sermon.</div></div>
-    <div class="callout-box"><div class="callout-label">Bottom</div><div class="callout-line"><strong>Old vs. New Covenant (1.6/10)</strong> — the lowest reading the index has logged on this category. Most sermons did not distinguish between the two covenants at all.</div></div>
-  </div>
-  <div class="cat-tier">
-    <div class="tier-label">Theological Foundation</div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Finished Work Clarity</span><span class="cat-score">3.5 / 15</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 23.3%; background: #8A8078;"></div></div>
-      <div class="cat-desc">Is the gospel presented as completed or in progress?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Union with Christ</span><span class="cat-score">2.1 / 10</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 21.0%; background: #7A3B3B;"></div></div>
-      <div class="cat-desc">Is Christ the believer's life, or just a helper?</div>
-    </div>
-  </div>
-  <div class="cat-tier">
-    <div class="tier-label">Core Theology</div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Faith Definition</span><span class="cat-score">2.8 / 10</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 28.0%; background: #8A8078;"></div></div>
-      <div class="cat-desc">Is faith trust in Christ, or a tool to get results?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">New Covenant Clarity</span><span class="cat-score">1.6 / 10</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 16.0%; background: #7A3B3B;"></div></div>
-      <div class="cat-desc">Does the message distinguish old and new covenant?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Assurance & Security</span><span class="cat-score">2.7 / 10</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 27.0%; background: #8A8078;"></div></div>
-      <div class="cat-desc">Is security grounded in Christ or in consistency?</div>
-    </div>
-  </div>
-  <div class="cat-tier">
-    <div class="tier-label">Drift Detection</div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Performance Drift</span><span class="cat-score">2.0 / 8</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 25.0%; background: #7A3B3B;"></div></div>
-      <div class="cat-desc">Does the message hand the listener an assignment or a finished gift?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Source of Transformation</span><span class="cat-score">1.3 / 5</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 26.0%; background: #7A3B3B;"></div></div>
-      <div class="cat-desc">Is change powered by who you already are, or by trying harder?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Believer Identity</span><span class="cat-score">1.9 / 7</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 27.1%; background: #8A8078;"></div></div>
-      <div class="cat-desc">Are believers defined by Christ's record or their own?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Distance Language</span><span class="cat-score">2.0 / 5</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 40.0%; background: #8A8078;"></div></div>
-      <div class="cat-desc">Are believers close to God or still trying to get there?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Fruit & Calling Integration</span><span class="cat-score">2.0 / 5</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 40.0%; background: #8A8078;"></div></div>
-      <div class="cat-desc">Does the sermon honor the apostolic pattern — gift first, then response?</div>
-    </div>
-  </div>
-  <div class="cat-tier">
-    <div class="tier-label">Textual Quality</div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Contextual Integrity</span><span class="cat-score">2.3 / 5</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 46.0%; background: #7CA0BD;"></div></div>
-      <div class="cat-desc">Are Bible passages handled in context?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Audience Alignment</span><span class="cat-score">2.5 / 5</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 50.0%; background: #7CA0BD;"></div></div>
-      <div class="cat-desc">Is the message speaking correctly to believers vs. unbelievers?</div>
-    </div>
-    <div class="cat-row">
-      <div class="cat-head"><span class="cat-name">Textual Integrity</span><span class="cat-score">2.0 / 5</span></div>
-      <div class="cat-bar"><div class="fill" style="width: 40.0%; background: #8A8078;"></div></div>
-      <div class="cat-desc">Does the sermon handle theological tension honestly?</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2 style="font-size: 22px;">The Distribution — Grade Breakdown</h2>
-  <div class="dist-tiles">
-    <div class="dist-tile g-A"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><circle cx="0" cy="16" r="13" fill="#D4B85C"/><line x1="0" y1="-4" x2="0" y2="-12" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="0" y1="36" x2="0" y2="44" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="-18" y1="16" x2="-26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="16" x2="26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="-13" y1="3" x2="-18" y2="-2" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="13" y1="3" x2="18" y2="-2" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="-13" y1="29" x2="-18" y2="34" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="13" y1="29" x2="18" y2="34" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/></svg></div><div class="grade">A</div><div class="count">0</div><div class="range">90–100</div></div>
-    <div class="dist-tile g-B"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><circle cx="0" cy="16" r="14" fill="#4A90C4" opacity="0.15"/><circle cx="0" cy="16" r="11" fill="#D4B85C" opacity="0.85"/></svg></div><div class="grade">B</div><div class="count">0</div><div class="range">80–89</div></div>
-    <div class="dist-tile g-C"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="12" r="12" fill="#D4B85C" opacity="0.7"/><ellipse cx="-4" cy="30" rx="26" ry="14" fill="#8899A8" opacity="0.9"/><ellipse cx="-16" cy="24" rx="16" ry="11" fill="#94A4B4"/><ellipse cx="8" cy="22" rx="18" ry="12" fill="#94A4B4"/><ellipse cx="-4" cy="20" rx="14" ry="10" fill="#A4B4C4"/></svg></div><div class="grade">C</div><div class="count">0</div><div class="range">65–79</div></div>
-    <div class="dist-tile g-D"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="30" rx="30" ry="16" fill="#8A8078" opacity="0.8"/><ellipse cx="-14" cy="24" rx="18" ry="12" fill="#9A9590"/><ellipse cx="14" cy="22" rx="20" ry="13" fill="#9A9590"/><ellipse cx="0" cy="20" rx="16" ry="12" fill="#B0ACA6"/><ellipse cx="-8" cy="16" rx="12" ry="9" fill="#B8B4AE"/><ellipse cx="8" cy="15" rx="13" ry="10" fill="#B8B4AE"/></svg></div><div class="grade">D</div><div class="count">0</div><div class="range">50–64</div></div>
-    <div class="dist-tile g-F"><div class="icon"><svg viewBox="-30 -10 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="grade">F</div><div class="count">10</div><div class="range">0–49</div></div>
-  </div>
-  <p class="grade-context">All 10 sermons landed in the F band. Last week's single C-band reading was not repeated.</p>
-  <p class="dist-footnote">2 watchlist channels excluded (no qualifying sermon uploaded this week).</p>
-</section>
-
-<section class="how-it-works">
-  <h2 style="font-size: 18px;">The Index — How This Works</h2>
-  <p style="margin: 0;">The Grace Clarity Index (GCI) measures how clearly a sermon articulates the finished work of Christ as the foundation of the believer's identity, security, and righteousness — and whether the apostolic indicative-imperative pattern is honored when fruit and calling come up. It does not evaluate sincerity or salvation. Each sermon is scored across 13 categories totaling 100 points. Grades: A 90–100, B 80–89, C 65–79, D 50–64, F 0–49. Two hard rules cap the result: the Ceiling Rule limits any sermon whose foundation is not the finished work to a maximum of 70, and the Core Lock Rule limits any sermon that does not explicitly state full righteousness in Christ alone to a maximum of 60.</p>
-</section>
-
-<section class="cta">
-  <p>Think your pastor preaches the finished work clearly? Individual sermon reports are coming soon.</p>
-  <p>Visit graceanswers.com for more on the Grace Clarity Index.</p>
-</section>
-
-<footer>
-  The Grace Clarity Index is a theological assessment tool developed by Grace Answers. · graceanswers.com · Published May 25, 2026 · Based on 10 sermons from widely viewed English-language church YouTube channels.
-</footer>
-
+:root{--gold:#C9A84C;--cream:#F9F5EC;--dark:#1A1610;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Jost',sans-serif;font-size:19px;line-height:1.65;color:var(--dark);background:var(--cream);}
+p,li,td,span,div.patterns p,.fast-take,.cat-desc,.grade-context,.dist-footnote,footer{font-size:inherit !important;}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 0;}
+.sky{background:linear-gradient(180deg,#2d1f2f 0%, #4a2a3a 35%, #6b3a3a 70%, #7A3B3B 100%);color:#fff;text-align:center;padding:40px 20px 34px;}
+.sky .title{font-size:30pt;font-weight:600;letter-spacing:.5px;}
+.sky .sub{font-family:'Jost';font-size:14px;opacity:.85;max-width:520px;margin:6px auto 0;}
+.sky .icon{margin:18px auto 6px;width:80px;}
+.headline-score{font-family:'Cormorant Garamond';font-size:64pt;font-weight:700;line-height:1;}
+.temp-label{font-size:16pt;letter-spacing:1px;margin-top:4px;}
+.meta{font-size:13px;opacity:.85;margin-top:8px;}
+.howread{font-style:italic;text-align:center;color:#5a5040;max-width:600px;margin:22px auto 6px;font-family:'Cormorant Garamond';font-size:15pt;}
+/* sky bar */
+.skybar-wrap{margin:26px 8px 44px;position:relative;}
+.skybar{height:32px;border-radius:16px;background:linear-gradient(90deg,#7A3B3B 0%,#6B4040 49%,#8A8078 50%,#9A9590 64%,#8899A8 65%,#7CA0BD 79%,#5B98C4 80%,#4A90C4 89%,#3A88CC 90%,#2E7EB8 100%);}
+.marker{position:absolute;top:-6px;width:4px;height:44px;background:#fff;border-radius:3px;box-shadow:0 0 4px rgba(0,0,0,.4);left:calc(26% );transform:translateX(-50%);}
+.skybar-labels{position:relative;height:52px;margin-top:6px;font-size:.75rem;color:#6a6050;}
+.skybar-labels span{position:absolute;white-space:nowrap;transform:translateX(-50%);}
+.l1{top:12px;} .l2{top:34px;}
+/* final score block */
+.final-score-block{background:#1A1610;color:var(--cream);max-width:480px;margin:10px auto 36px;padding:32px;border-radius:12px;border:1px solid rgba(201,168,76,.2);text-align:center;}
+.fsb-label{color:var(--gold);text-transform:uppercase;letter-spacing:.15em;font-size:11px;}
+.fsb-date{color:#9a9286;font-size:13px;margin-top:2px;}
+.fsb-icon{margin:12px auto 6px;width:56px;} .fsb-icon svg{width:56px;height:56px;}
+.fsb-score-row{display:flex;align-items:baseline;justify-content:center;gap:14px;}
+.fsb-score{font-family:'Cormorant Garamond';font-size:72pt;line-height:1;}
+.fsb-grade{color:var(--gold);font-size:28pt;font-family:'Cormorant Garamond';}
+.fsb-tagline{font-family:'Cormorant Garamond';font-size:16px;color:#cabfa8;margin:6px 0 18px;}
+.fsb-rollups{text-align:left;}
+.fsb-row{position:relative;display:flex;justify-content:space-between;font-size:13px;margin:10px 0 4px;}
+.fsb-bar{position:absolute;bottom:-4px;left:0;height:3px;background:var(--gold);border-radius:2px;}
+.fsb-footer{margin-top:18px;font-size:12px;color:#9a9286;}
+/* one sentence */
+.fast-take{text-align:center;font-family:'Cormorant Garamond';font-size:17pt;font-style:italic;color:#3a3328;margin:8px auto 30px;max-width:620px;}
+/* patterns */
+.patterns{margin:10px auto 30px;}
+.patterns h2{font-size:22pt;color:var(--dark);margin-bottom:6px;border-bottom:2px solid var(--gold);padding-bottom:6px;}
+.patterns h3{font-family:'Cormorant Garamond';font-size:11.5pt;font-weight:600;color:var(--gold);margin:18px 0 4px;letter-spacing:.3px;}
+.patterns h3:first-of-type{margin-top:8px;}
+.patterns p{margin:0 0 6px;}
+.pull-quote{font-family:'Cormorant Garamond';font-size:14pt;font-weight:600;color:#1A1610;text-align:center;margin:22px 20px;padding:16px 24px;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);line-height:1.45;}
+/* category bars */
+.section-title{font-family:'Cormorant Garamond';font-size:20pt;border-bottom:2px solid var(--gold);padding-bottom:6px;margin:30px 0 14px;}
+.tier-label{min-width:100px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.78rem;padding:14px 0 6px;border-bottom:1px solid #e0dcd4;margin-bottom:10px;color:#6a6050;}
+.category-row{margin:0 0 14px;}
+.cat-head{display:flex;justify-content:space-between;}
+.cat-name{font-weight:500;} .cat-val{color:#6a6050;}
+.bar-container{background:#e7e1d4;border-radius:6px;height:12px;margin:5px 0;width:100%;overflow:hidden;}
+.bar{height:12px;border-radius:6px;}
+.description{font-size:.85rem;color:#666;margin-top:2px;}
+/* grade tiles */
+.grade-tiles{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:16px 0 8px;}
+.grade-tile{min-width:120px;flex:1 1 calc(20% - 10px);text-align:center;padding:14px 8px;border-radius:10px;}
+.gt-icon svg{width:46px;height:46px;} .gt-grade{font-family:'Cormorant Garamond';font-size:22pt;font-weight:700;}
+.gt-count{font-size:15pt;} .gt-range{font-size:11px;color:#6a6050;}
+.dist-footnote{font-size:13px;color:#6a6050;text-align:center;margin-top:8px;}
+.grade-context{text-align:center;font-style:italic;color:#5a5040;margin:8px 0 0;font-family:'Cormorant Garamond';font-size:14pt;}
+.index-box{background:#fff;border:1px solid #e0dcd4;border-radius:10px;padding:20px;margin:24px 0;font-size:15px;}
+.cta{text-align:center;font-family:'Cormorant Garamond';font-size:15pt;color:#3a3328;margin:26px 0;}
+footer{padding:20px 24px 8px;text-align:center;font-size:13px;color:#6a6050;border-top:1px solid #e0dcd4;margin-top:20px;}
+@media (max-width:767px){
+ .headline-score{font-size:48pt;} .fsb-score{font-size:54pt;}
+ .skybar-labels{font-size:.65rem;} .grade-tile{flex:1 1 calc(33% - 10px);}
+ .sky .title{font-size:24pt;}
+}
+</style></head><body>
+<div class="sky">
+  <div class="title">The Sunday Forecast</div>
+  <div class="sub">A weekly snapshot of grace clarity across the world's most widely viewed English-language pulpits.</div>
+  <div class="icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div>
+  <div class="headline-score">26</div>
+  <div class="temp-label">Storm Warning</div>
+  <div class="meta">9 sermons scored · range 8–52</div>
 </div>
+<div class="wrap">
+  <p class="howread">The Sunday Forecast measures not what is said about Jesus, but what is doing the theological work in the message.</p>
 
+  <div class="skybar-wrap">
+    <div class="skybar"></div><div class="marker"></div>
+    <div class="skybar-labels">
+      <span class="l1" style="left:24.5%">Storm warning</span>
+      <span class="l2" style="left:57%">Overcast</span>
+      <span class="l1" style="left:72%">Partly cloudy</span>
+      <span class="l2" style="left:84.5%">Mostly clear</span>
+      <span class="l1" style="left:95%">Clear skies</span>
+    </div>
+  </div>
+
+  <section class="final-score-block">
+    <div class="fsb-label">This Week's Average</div>
+    <div class="fsb-date">Week of May 31, 2026</div>
+    <div class="fsb-icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div>
+    <div class="fsb-score-row"><span class="fsb-score">26</span><span class="fsb-grade">F</span></div>
+    <div class="fsb-tagline"><em>The Finished Work Was Absent or Contradicted</em></div>
+    <div class="fsb-rollups"><div class="fsb-row"><span>Finished Work Clarity</span><span>6.4 / 15</span><div class="fsb-bar" style="width:43%"></div></div><div class="fsb-row"><span>Identity in Christ</span><span>4.3 / 10</span><div class="fsb-bar" style="width:43%"></div></div><div class="fsb-row"><span>Performance Drift</span><span>2.4 / 10</span><div class="fsb-bar" style="width:24%"></div></div><div class="fsb-row"><span>Old vs. New Covenant</span><span>4.1 / 10</span><div class="fsb-bar" style="width:41%"></div></div></div>
+    <div class="fsb-footer">9 sermons scored · Updated weekly</div>
+  </section>
+
+  <p class="fast-take">This week: sincere, warm, often moving — but across the board the believer's effort, response, and experience carried the weight the finished work was meant to carry.</p>
+
+  <div class="patterns">
+    <h2>The Patterns</h2>
+    <h3>The Temperature</h3>
+    <p>Nine sermons, and the storm band held. The average rose to 26 — the highest reading in three weeks, lifted partly by a Pentecost-weekend turn toward the Spirit and the risen Christ — but it is still a storm reading. Eight of the nine landed in the F band; one cleared into the overcast. The warmth was real. The clarity was not.</p>
+    <h3>The Governing Pattern</h3>
+    <p>The recurring move was not a denial of grace but a quiet substitution. Sermon after sermon opened a door to the finished work, then handed the listener the load: <em>be diligent, make the ask, measure up, pray longer, bring your pain, embrace the change.</em> The cross showed up — often beautifully — but rarely as the thing actually doing the work.</p>
+    <h3>Warm but Ungrounded</h3>
+    <p>Where assurance appeared, it was most often anchored in God's faithfulness or felt presence rather than in an accomplished righteousness. That is a tender, true note. But <em>nearness without explanation is sentimentality, not theology</em> — and a listener left knowing God is close, without knowing why they stand accepted, is left to manufacture the standing themselves.</p>
+    <h3>One Sermon, In Miniature</h3>
+    <p>One sermon declared the believer complete and remembered by God, then organized its whole second half around what the listener must keep doing so the relationship doesn't fade. The identity was stated and then immediately put back on the clock. That is the week in a single motion: <em>grace announced, then revoked as a wage.</em></p>
+    <h3>The Bright Spot</h3>
+    <p>One message broke from the pack by keeping Christ at the center the whole way through — a road-to-Emmaus reflection that refused to make the point about the listener's outcome and kept returning to the risen Jesus who comes close. It is honored here for getting nearer than any other this week. It stayed in the overcast rather than clearing only because its ground was Christ's <em>presence</em> rather than His explicitly stated, finished righteousness — the standard the index calls the Core Lock (the requirement that the believer's full acceptance in Christ alone be plainly said, not implied).</p>
+    <h3>Where the Covenant Disappears</h3>
+    <p>The old-covenant/new-covenant distinction was the quietest category on the board again. Few messages told the listener which covenant they are standing in, which is precisely why so many drifted, by gravity, toward <em>do this and God will respond.</em></p>
+    <div class="pull-quote">When the finished work is admired but not trusted to carry the message, grace becomes the decoration on a sermon about the self.</div>
+    <h3>The Editorial</h3>
+    <p>None of this is a question of sincerity, and it is not an accusation. It is a measurement of where the weight sits. The New Covenant does not ask the believer to sustain a standing Christ already secured; it announces a finished righteousness and lets the response flow from rest. A week that rose four points and still sits in the storm is not a failure of warmth. It is an invitation back to the one foundation that was never ours to hold up.</p>
+  </div>
+
+  <h2 class="section-title">The Forecast — Category Averages</h2>
+  <div class="tier-label">Tier 1 — Foundation</div><div class="category-row"><div class="cat-head"><span class="cat-name">Finished Work Clarity</span><span class="cat-val">6.4 / 15</span></div><div class="bar-container"><div class="bar" style="width:43%;background:#b9763e"></div></div><div class="description">Is the gospel presented as completed or in progress?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Union with Christ</span><span class="cat-val">4.3 / 10</span></div><div class="bar-container"><div class="bar" style="width:43%;background:#b9763e"></div></div><div class="description">Is Christ the believer's life, or just a helper?</div></div><div class="tier-label">Tier 2 — Core</div><div class="category-row"><div class="cat-head"><span class="cat-name">Faith Definition</span><span class="cat-val">4.0 / 10</span></div><div class="bar-container"><div class="bar" style="width:40%;background:#b9763e"></div></div><div class="description">Is faith trust in Christ, or a tool to get results?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">New Covenant Clarity</span><span class="cat-val">4.1 / 10</span></div><div class="bar-container"><div class="bar" style="width:41%;background:#b9763e"></div></div><div class="description">Does the message distinguish old and new covenant?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Assurance & Security</span><span class="cat-val">4.3 / 10</span></div><div class="bar-container"><div class="bar" style="width:43%;background:#b9763e"></div></div><div class="description">Is security grounded in Christ or in consistency?</div></div><div class="tier-label">Tier 3 — Drift</div><div class="category-row"><div class="cat-head"><span class="cat-name">Performance Drift</span><span class="cat-val">1.9 / 8</span></div><div class="bar-container"><div class="bar" style="width:24%;background:#7A3B3B"></div></div><div class="description">Does the message hand the listener an assignment or a finished gift?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Source of Transformation</span><span class="cat-val">0.8 / 5</span></div><div class="bar-container"><div class="bar" style="width:16%;background:#7A3B3B"></div></div><div class="description">Is change powered by who you already are, or by trying harder?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Believer Identity</span><span class="cat-val">3.7 / 7</span></div><div class="bar-container"><div class="bar" style="width:53%;background:#C9A84C"></div></div><div class="description">Are believers defined by Christ's record or their own?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Distance Language</span><span class="cat-val">3.4 / 5</span></div><div class="bar-container"><div class="bar" style="width:68%;background:#3c8a66"></div></div><div class="description">Are believers close to God or still trying to get there?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Fruit & Calling Integration</span><span class="cat-val">3.1 / 5</span></div><div class="bar-container"><div class="bar" style="width:62%;background:#C9A84C"></div></div><div class="description">Gift first, then response — without going silent on Christian living?</div></div><div class="tier-label">Tier 4 — Textual</div><div class="category-row"><div class="cat-head"><span class="cat-name">Contextual Integrity</span><span class="cat-val">3.7 / 5</span></div><div class="bar-container"><div class="bar" style="width:74%;background:#3c8a66"></div></div><div class="description">Are Bible passages handled in context?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Audience Alignment</span><span class="cat-val">3.7 / 5</span></div><div class="bar-container"><div class="bar" style="width:74%;background:#3c8a66"></div></div><div class="description">Is the message speaking correctly to believers vs. unbelievers?</div></div><div class="category-row"><div class="cat-head"><span class="cat-name">Textual Integrity</span><span class="cat-val">3.2 / 5</span></div><div class="bar-container"><div class="bar" style="width:64%;background:#C9A84C"></div></div><div class="description">Does the sermon handle theological tension honestly?</div></div>
+
+  <h2 class="section-title">The Distribution</h2>
+  <div class="grade-tiles"><div class="grade-tile" style="background:#2E7EB814"><div class="gt-icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="0" cy="16" r="13" fill="#D4B85C"/><line x1="0" y1="-4" x2="0" y2="-12" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="0" y1="36" x2="0" y2="44" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="-18" y1="16" x2="-26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="16" x2="26" y2="16" stroke="#D4B85C" stroke-width="2" stroke-linecap="round"/></svg></div><div class="gt-grade" style="color:#2E7EB8">A</div><div class="gt-count">0</div><div class="gt-range">90–100</div></div><div class="grade-tile" style="background:#4A90C414"><div class="gt-icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="0" cy="16" r="11" fill="#D4B85C" opacity="0.85"/><ellipse cx="6" cy="32" rx="16" ry="7" fill="#B8CCE0" opacity="0.5"/><ellipse cx="-2" cy="30" rx="10" ry="6" fill="#C4D6E8" opacity="0.4"/></svg></div><div class="gt-grade" style="color:#4A90C4">B</div><div class="gt-count">0</div><div class="gt-range">80–89</div></div><div class="grade-tile" style="background:#7CA0BD14"><div class="gt-icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="12" r="12" fill="#D4B85C" opacity="0.7"/><ellipse cx="-4" cy="30" rx="26" ry="14" fill="#8899A8" opacity="0.9"/><ellipse cx="-16" cy="24" rx="16" ry="11" fill="#94A4B4"/><ellipse cx="8" cy="22" rx="18" ry="12" fill="#94A4B4"/><ellipse cx="-4" cy="20" rx="14" ry="10" fill="#A4B4C4"/></svg></div><div class="gt-grade" style="color:#7CA0BD">C</div><div class="gt-count">0</div><div class="gt-range">65–79</div></div><div class="grade-tile" style="background:#8A807814"><div class="gt-icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="30" rx="30" ry="16" fill="#8A8078" opacity="0.8"/><ellipse cx="-14" cy="24" rx="18" ry="12" fill="#9A9590"/><ellipse cx="14" cy="22" rx="20" ry="13" fill="#9A9590"/><ellipse cx="0" cy="20" rx="16" ry="12" fill="#B0ACA6"/><ellipse cx="-8" cy="16" rx="12" ry="9" fill="#B8B4AE"/><ellipse cx="8" cy="15" rx="13" ry="10" fill="#B8B4AE"/></svg></div><div class="gt-grade" style="color:#8A8078">D</div><div class="gt-count">1</div><div class="gt-range">50–64</div></div><div class="grade-tile" style="background:#7A3B3B14"><div class="gt-icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="0" cy="28" rx="28" ry="16" fill="#7A3B3B" opacity="0.9"/><ellipse cx="-12" cy="22" rx="16" ry="12" fill="#6B3030"/><ellipse cx="12" cy="20" rx="18" ry="13" fill="#6B3030"/><ellipse cx="0" cy="18" rx="14" ry="11" fill="#5A2828"/><path d="M2 34 L-2 44 L3 42 L0 54" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="-10" y1="38" x2="-12" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="-4" y1="40" x2="-6" y2="48" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/><line x1="8" y1="38" x2="6" y2="46" stroke="#8A8078" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/></svg></div><div class="gt-grade" style="color:#7A3B3B">F</div><div class="gt-count">8</div><div class="gt-range">0–49</div></div></div>
+  <p class="grade-context">All nine landed at D or below — the 3rd consecutive week with no sermon above a C.</p>
+  <p class="dist-footnote">Nine sermons scored from widely viewed English-language church channels.</p>
+
+  <div class="index-box">
+    <strong>How this works.</strong> The Grace Clarity Index measures how clearly a sermon articulates the finished work of Christ as the foundation of the believer's identity, security, and righteousness — and whether the apostolic pattern of gift-first-then-response is honored when fruit and calling come up. It does not evaluate sincerity or salvation. Each sermon is scored across 13 categories totaling 100 points. Grades: A 90–100 · B 80–89 · C 65–79 · D 50–64 · F 0–49. Two hard rules cap the score: the <em>Ceiling Rule</em> (if the finished work isn't clearly the foundation, the score cannot exceed 70) and the <em>Core Lock Rule</em> (if the believer's full righteousness in Christ alone isn't clearly stated, the score cannot exceed 60).
+  </div>
+
+  <p class="cta">Visit graceanswers.com for more on the Grace Clarity Index.</p>
+
+  <footer>The Grace Clarity Index is a theological assessment tool developed by Grace Answers. · graceanswers.com · Published June 1, 2026 · Based on 9 sermons from widely viewed English-language church YouTube channels.</footer>
+</div>
+<!-- IFRAME RESIZE BROADCASTER -->
 <script>
 (function(){
   function sendHeight(){
     if(window._obs) window._obs.disconnect();
-    document.documentElement.style.height='0'; document.body.style.height='0';
+    document.documentElement.style.height='0';
+    document.body.style.height='0';
     var h=document.body.scrollHeight;
-    document.body.style.height=''; document.documentElement.style.height='';
+    document.body.style.height='';
+    document.documentElement.style.height='';
     if(window._obs) window._obs.observe(document.body,{childList:true,subtree:true,attributes:true});
     window.parent.postMessage({type:'resize', height: Math.max(h,300)}, '*');
   }
   sendHeight();
-  window.addEventListener('load', function(){ sendHeight(); setTimeout(sendHeight, 500); setTimeout(sendHeight, 2000); setTimeout(sendHeight, 5000); });
+  window.addEventListener('load', function(){
+    sendHeight();
+    setTimeout(sendHeight, 500);
+    setTimeout(sendHeight, 2000);
+    setTimeout(sendHeight, 5000);
+  });
   window.addEventListener('resize', sendHeight);
   if(typeof MutationObserver !== 'undefined'){
     window._obs=new MutationObserver(sendHeight);
@@ -288,5 +167,4 @@ footer { text-align: center; padding: 20px 24px 8px; color: #8A8078; font-size: 
   }
 })();
 </script>
-</body>
-</html>
+</body></html>
