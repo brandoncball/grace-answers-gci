@@ -280,29 +280,27 @@
 
 </div>
 
-<!-- IFRAME RESIZE BROADCASTER -->
+<!-- IFRAME HEIGHT BROADCASTER (posts gci:height to the parent embed) -->
 <script>
 (function(){
-  function sendHeight(){
-    if(window._obs) window._obs.disconnect();
-    document.documentElement.style.height='0';
-    document.body.style.height='0';
-    var h=document.body.scrollHeight;
-    document.body.style.height='';
-    document.documentElement.style.height='';
-    if(window._obs) window._obs.observe(document.body,{childList:true,subtree:true,attributes:true});
-    window.parent.postMessage({type:'resize', height: Math.max(h,300)}, '*');
+  function H(){
+    return Math.max(
+      document.documentElement.scrollHeight,
+      document.body ? document.body.scrollHeight : 0,
+      document.body ? document.body.offsetHeight : 0
+    );
   }
-  sendHeight();
-  window.addEventListener('load', function(){
-    sendHeight();
-    setTimeout(sendHeight, 500);
-    setTimeout(sendHeight, 2000);
-    setTimeout(sendHeight, 5000);
-  });
-  window.addEventListener('resize', sendHeight);
-  if(typeof MutationObserver !== 'undefined'){
-    window._obs=new MutationObserver(sendHeight);
-    window._obs.observe(document.body,{childList:true, subtree:true, attributes:true});
+  function send(){
+    try { (window.parent || window).postMessage({ type:'gci:height', height: Math.max(H(), 300) }, '*'); } catch(e){}
   }
+  send();
+  document.addEventListener('DOMContentLoaded', send);
+  window.addEventListener('load', send);
+  window.addEventListener('resize', send);
+  var n = 0, iv = setInterval(function(){ send(); if(++n > 30) clearInterval(iv); }, 500);
+  if (window.ResizeObserver) { try { new ResizeObserver(send).observe(document.documentElement); } catch(e){} }
 })();
+</script>
+</body>
+</html>
+                                                                                                                            
