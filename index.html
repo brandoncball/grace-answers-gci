@@ -37,6 +37,9 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
 .header .intro { font-size: 16px; color: var(--body); margin-top: 14px; }
 .lens { max-width: 600px; margin: 18px auto 0; }
 .lens p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; color: var(--body); text-align: center; margin: 8px 0; }
+.header.lead { padding-bottom: 0; }
+.header.after { padding-top: 0; padding-bottom: 22px; }
+.header.after .intro { margin-top: 0; }
 /* Sky header — SEMANTIC weather coloring, not rebranded; swap gradient per weather table */
 .sky { margin: 26px 0 0; border-radius: 14px; padding: 34px 20px 28px; text-align: center;
        background: linear-gradient(#2A3040, #4A5868 45%, #687888 80%, #8899A8); }
@@ -101,13 +104,8 @@ footer { font-size: 12px; color: var(--soft); text-align: center; border-top: 1p
 @page { size: 8.5in; margin: 0.75in; }
 </style></head><body>
 <div class="wrap">
-<div class="header">
+<div class="header lead">
   <h2 class="edition">The Sunday Forecast &ndash; November 8, 2026</h2>
-  <p class="intro">Six sermons from the world&rsquo;s most-watched pulpits, read for one thing: how clearly the finished work of Christ governed the message.</p>
-  <div class="lens">
-    <p>The Sunday Forecast measures not what is said about Jesus, but what is doing the theological work in the message.</p>
-    <p>This is not a ranking of good churches or faithful pastors. It measures one thing: how clearly the finished work carried the message this week. A sermon can be warm, true, and helpful and still read cloudy here, because the Forecast is looking for one specific thing.</p>
-  </div>
 </div>
 <section class="sky">
   <div class="icon"><svg viewBox="-30 -10 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
@@ -135,6 +133,13 @@ footer { font-size: 12px; color: var(--soft); text-align: center; border-top: 1p
   </div>
 </div>
 <p class="sky-meaning"><em>Grace Present, but Response Governed</em></p>
+<div class="header after">
+  <p class="intro">Six sermons from the world&rsquo;s most-watched pulpits, read for one thing: how clearly the finished work of Christ governed the message.</p>
+  <div class="lens">
+    <p>The Sunday Forecast measures not what is said about Jesus, but what is doing the theological work in the message.</p>
+    <p>This is not a ranking of good churches or faithful pastors. It measures one thing: how clearly the finished work carried the message this week. A sermon can be warm, true, and helpful and still read cloudy here, because the Forecast is looking for one specific thing.</p>
+  </div>
+</div>
 <section class="block">
   <h2 class="section-title">This Week in One Sentence</h2>
   <p class="fast-take">This week the board narrowed and the old pattern held: the finished work was stated warmly in the room, and the sermon was built on something else.</p>
